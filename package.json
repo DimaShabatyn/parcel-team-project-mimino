@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "parcel-team-project-mimino",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://DimaShabatyn.github.io/parcel-team-project-mimino",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /parcel-team-project-mimino/"
   },
   "repository": {
     "type": "git",
