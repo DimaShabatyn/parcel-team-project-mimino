@@ -4,9 +4,12 @@
 @import './utils/breakpoints';
 @import './base/global';
 @import './utils/visually-hidden';
+@import './base/container';
+
 
 // fonts
 @import './base/fonts';
+
 
 // header (all)
 @import './layout/header';
@@ -29,6 +32,14 @@
 @import './components/hotel/adult-lux';
 @import './components/hotel/adult-third';
 @import './components/hotel/adult-two';
+
+// room
+@import './components/room/hero-room-lux'; 
+@import './components/room/amenities-lux';
+@import './components/room/hero-room-third';
+@import './components/room/amenities-third';
+@import './components/room/hero-room-two';
+@import './components/room/amenities-two';
 
 // footer (all)
 @import './layout/footer';
