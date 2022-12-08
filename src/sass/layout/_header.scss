@@ -1,3 +1,23 @@
 .header {
     background-color: aqua;
 }
+
+.logo {
+    font-family: 'Film P3', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    text-decoration: none;
+    font-size: 40px;
+    color: #7c0d0d;
+}
+  
+.nav__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  
+    color: #f3c653;
+}
