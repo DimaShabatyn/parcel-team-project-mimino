@@ -1,9 +1,34 @@
+// systems
 @import './utils/variables';
 @import './base/common';
 @import './utils/breakpoints';
 @import './base/global';
-@import './base/fonts';
 @import './utils/visually-hidden';
+
+// fonts
+@import './base/fonts';
+
+// header (all)
 @import './layout/header';
-@import './components/hero-home';
+
+// homepage (main page)
+@import './components/homepage/hero-home';
+@import './components/homepage/about-restaurant';
+@import './components/homepage/details-restaurant';
+@import './components/homepage/about-hotel';
+@import './components/homepage/details-hotel';
+@import './components/homepage/contacts-home';
+
+// restaurant (second page)
+@import './components/restaurant/hero-restaurant';
+@import './components/restaurant/about-kitchen';
+@import './components/restaurant/menu-restaurant';
+
+// hotel (third page)
+@import './components/hotel/hero-hotel';
+@import './components/hotel/adult-lux';
+@import './components/hotel/adult-third';
+@import './components/hotel/adult-two';
+
+// footer (all)
 @import './layout/footer';
