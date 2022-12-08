@@ -2,7 +2,7 @@
     margin: 0 auto;
 
     @media  screen and (min-width: $mobile) {
-        max-width: 414px;
+        width: 414px;
         padding: 0 15px;
     }
     @media  screen and (min-width: $tablet) {
