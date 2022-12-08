@@ -1,2 +1,9 @@
-@import './common';
-@import './example';
+@import './utils/variables';
+@import './base/common';
+@import './utils/breakpoints';
+@import './base/global';
+@import './base/fonts';
+@import './utils/visually-hidden';
+@import './layout/header';
+@import './components/hero-home';
+@import './layout/footer';

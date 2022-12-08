@@ -1,0 +1,15 @@
+// Film P3                          700
+
+/* font-family: 'Film P3', sans-serif; */
+/* Film P3 - 400 */
+@font-face {
+  font-family: 'Film P3';
+  src: url('../fonts/FilmP3Bold.eot');
+  src: local('Film P3 Bold'), local('Film-P3-Bold'),
+    url('../fonts/FilmP3Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff'),
+    url('../fonts/FilmP3Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

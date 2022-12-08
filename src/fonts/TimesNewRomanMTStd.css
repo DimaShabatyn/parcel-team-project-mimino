@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: local('Times New Roman Regular'), local('Times-New-Roman-Regular'),
+        url('TimesNewRomanMTStd.woff2') format('woff2'),
+        url('TimesNewRomanMTStd.woff') format('woff'),
+        url('TimesNewRomanMTStd.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
