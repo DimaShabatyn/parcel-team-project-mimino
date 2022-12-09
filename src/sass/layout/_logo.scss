@@ -1,0 +1,38 @@
+.logo {
+    font-family: 'Film P3', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+  }
+  .header__logo {
+    text-decoration: none;
+    font-size: 36px;
+    // color: #ffffff;
+    @media screen and (min-width: 1024px) {
+      font-size: 40px;
+    }
+  }
+  .footer__logo {
+    text-decoration: none;
+    font-size: 40px;
+    color: #f3c653;
+  
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+    }
+  }  
+  
+​
+  .hero__logo {
+    text-align: center;
+    font-size: 96px;
+    color: #ffffff;
+  
+    @media screen and (min-width: 1024px) {
+      font-size: 128px;
+    }
+    & span {
+      margin-left: 0.3em;
+    }
+}
