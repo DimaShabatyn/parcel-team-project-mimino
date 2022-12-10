@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding: 0;
+  margin: -1px;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+.container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding: 0 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 85px;
+  }
+}
+
+/* Film P3 - 400 */
+@font-face {
+  font-family: "Film P3";
+  src: url("../fonts/FilmP3Bold.eot");
+  src: local("Film P3 Bold"), local("Film-P3-Bold"), url("../fonts/FilmP3Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Times New Roman - 400 */
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../fonts/TimesNewRomanMTStd.eot");
+  src: local("Times New Roman Regular"), local("Times-New-Roman-Regular"), url("../fonts/TimesNewRomanMTStd.eot?#iefix") format("embedded-opentype"), url("../fonts/TimesNewRomanMTStd.woff2") format("woff2"), url("../fonts/TimesNewRomanMTStd.woff") format("woff"), url("../fonts/TimesNewRomanMTStd.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Times New Roman - 700 */
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../fonts/TimesNewRomanMTStd-Bold.eot");
+  src: local("Times New Roman Bold"), local("Times-New-Roman-Bold"), url("../fonts/TimesNewRomanMTStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TimesNewRomanMTStd-Bold.woff2") format("woff2"), url("../fonts/TimesNewRomanMTStd-Bold.woff") format("woff"), url("../fonts/TimesNewRomanMTStd-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* montserrat-300 - latin */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.eot");
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.eot");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.eot");
+  src: local("Montserrat Semi Bold"), local("Montserrat-Semi-Bold"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.header {
+  background-color: aqua;
+}
+
+.logo {
+  font-family: "Film P3", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  font-size: 40px;
+  color: #7c0d0d;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #f3c653;
+}
+
+.logo {
+  font-family: "Film P3", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+}
+
+.header__logo {
+  text-decoration: none;
+  font-size: 36px;
+}
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    font-size: 40px;
+  }
+}
+
+.footer__logo {
+  text-decoration: none;
+  font-size: 40px;
+  color: #f3c653;
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    font-size: 64px;
+  }
+}
+
+​ .hero__logo {
+  text-align: center;
+  font-size: 96px;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  ​ .hero__logo {
+    font-size: 128px;
+  }
+}
+​ .hero__logo span {
+  margin-left: 0.3em;
+}
+
+.hero-home {
+  background-color: blueviolet;
+}
+
+.hero-amenities-lux {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.hero-amenities-lux__title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+  color: #000000;
+}
+
+.hero-amenities-lux__text {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+}
+
+.footer {
+  background-color: aqua;
+}/*# sourceMappingURL=index.css.map */
