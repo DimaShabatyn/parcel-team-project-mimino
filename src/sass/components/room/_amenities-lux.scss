@@ -1,0 +1,47 @@
+.hero-amenities {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.hero-amenities__title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+  color: #000000;
+}
+
+.hero-amenities__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #7a7a7a;
+}
+.hero-amenities__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hero-amenities__list {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.hero-amenities__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.hero-amenities__subtitle {
+  margin-bottom: 16px;
+}
+.hero-amenities__btn {
+  margin-bottom: 20px;
+}
+.hero-amenities__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.02em;
+
+  color: #c79002;
+}
