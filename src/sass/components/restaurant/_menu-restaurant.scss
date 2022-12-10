@@ -1,0 +1,68 @@
+:root {
+  --background: rgba(255, 253, 238, 1);
+  --text-color: rgba(0, 0, 0, 1);
+}
+
+.restaurant-details {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+  background-color: var(--background);
+}
+
+.menu-restaurant__title {
+  font-family: 'Times New Roman';
+  font-size: 32px;
+  line-height: 1.16;
+  color: var(--text-color);
+}
+
+.menu-restaurant__table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.menu-restaurant__caption {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--text-color);
+  //   text-align: left;
+}
+
+.menu-restaurant__name {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.menu-restaurant__products {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.menu-restaurant__weight {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.menu-restaurant__price {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
