@@ -2,9 +2,17 @@ address {
   font-style: normal;
 }
 
-.container {
+.contacts.container {
   max-width: 414px;
   padding: 0 15px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+    padding: 56px 47px 44px 47px;
+  }
+
+  // @media screen and (min-width: $desktop) {
+  // }
 }
 
 .contacts {
@@ -12,6 +20,14 @@ address {
   padding-bottom: 32px;
 
   background-color: #fffdee;
+}
+
+.contacts-home__address {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .contacts-home__logo {
@@ -24,6 +40,11 @@ address {
   letter-spacing: 0.3em;
 
   color: #494848;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 64px;
+    margin-bottom: 8px;
+  }
 }
 
 .contacts-home__text {
@@ -31,9 +52,13 @@ address {
 
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
 
   color: #5f5f5f;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 52px;
+  }
 }
 
 .contacts-home__list {
@@ -44,24 +69,44 @@ address {
   display: flex;
   align-items: center;
 
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
   &:nth-child(-n + 2) {
     margin-bottom: 16px;
   }
 
   &:first-child .contacts-home__subtitle {
     margin-right: 22px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+    }
   }
 
   &:nth-child(2) .contacts-home__subtitle {
     margin-right: 48px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+    }
   }
 
   &:last-child .contacts-home__item-wrap {
     margin-left: 112px;
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 0;
+      margin-top: 48px;
+    }
   }
 
+  // КОСТИЛІ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   &:nth-child(n + 2) .contacts-home__item-wrap {
-    width: 100%;
+    @media screen and (max-width: 1023.5px) {
+      width: 100%;
+    }
   }
 }
 
@@ -82,6 +127,10 @@ address {
   background: #ffffff;
   border: 0.5px solid #f3c653;
   border-radius: 2px;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+  }
 
   .second-tel {
     margin-left: 12px;
@@ -116,6 +165,10 @@ address {
   letter-spacing: 0.01em;
 
   color: #494848;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 233px;
+  }
 }
 
 .contacts-home__map {
@@ -126,4 +179,9 @@ address {
 
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
+  @media screen and (min-width: $tablet) {
+    width: 535px;
+    height: 412px;
+  }
 }
