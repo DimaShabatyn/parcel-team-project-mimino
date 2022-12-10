@@ -233,6 +233,11 @@ img {
   flex-direction: column;
   gap: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .hero-amenities__column {
+    flex-direction: row;
+  }
+}
 
 .hero-amenities__list {
   margin-top: 32px;
@@ -245,6 +250,10 @@ img {
 
 .hero-amenities__subtitle {
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #000000;
 }
 
 .hero-amenities__btn {
@@ -257,6 +266,9 @@ img {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #c79002;
+}
+.hero-amenities__link:hover, .hero-amenities__link:focus {
+  color: #f3c653;
 }
 
 .footer {

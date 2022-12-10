@@ -1,3 +1,8 @@
+$titleColor: #000000;
+$textColor: #7a7a7a;
+$linkColor: #c79002;
+$linkAccent: #f3c653;
+
 .hero-amenities {
   margin-top: 32px;
   margin-bottom: 32px;
@@ -7,7 +12,7 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 1.16;
-  color: #000000;
+  color: $titleColor;
 }
 
 .hero-amenities__text {
@@ -16,12 +21,15 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
 
-  color: #7a7a7a;
+  color: $textColor;
 }
 .hero-amenities__column {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 .hero-amenities__list {
   margin-top: 32px;
@@ -32,6 +40,11 @@
 }
 .hero-amenities__subtitle {
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: $titleColor;
 }
 .hero-amenities__btn {
   margin-bottom: 20px;
@@ -43,5 +56,9 @@
 
   letter-spacing: 0.02em;
 
-  color: #c79002;
+  color: $linkColor;
+  &:hover,
+  &:focus {
+    color: $linkAccent;
+  }
 }
