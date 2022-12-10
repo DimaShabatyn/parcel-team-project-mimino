@@ -11,8 +11,10 @@ address {
     padding: 56px 47px 44px 47px;
   }
 
-  // @media screen and (min-width: $desktop) {
-  // }
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 64px 85px 74px 85px;
+  }
 }
 
 .contacts {
@@ -45,6 +47,11 @@ address {
     font-size: 64px;
     margin-bottom: 8px;
   }
+
+  @media screen and (min-width: $desktop) {
+    color: #828282;
+    margin-bottom: 16px;
+  }
 }
 
 .contacts-home__text {
@@ -59,10 +66,19 @@ address {
   @media screen and (min-width: $tablet) {
     margin-bottom: 52px;
   }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .contacts-home__list {
   margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0px;
+  }
 }
 
 .contacts-home__list-item {
@@ -75,6 +91,17 @@ address {
 
   &:nth-child(-n + 2) {
     margin-bottom: 16px;
+  }
+  &:first-child {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0px;
+    }
   }
 
   &:first-child .contacts-home__subtitle {
@@ -102,10 +129,11 @@ address {
     }
   }
 
-  // КОСТИЛІ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   &:nth-child(n + 2) .contacts-home__item-wrap {
-    @media screen and (max-width: 1023.5px) {
-      width: 100%;
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+      width: auto;
     }
   }
 }
@@ -154,6 +182,17 @@ address {
   line-height: 1.21;
 
   color: #494848;
+
+  @media screen and (min-width: $tablet) {
+    color: #828282;
+  }
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #f3c653;
+  }
 }
 
 .contacts-home__address-link {
@@ -169,11 +208,23 @@ address {
   @media screen and (min-width: $tablet) {
     max-width: 233px;
   }
+
+  @media screen and (min-width: $tablet) {
+    color: #828282;
+  }
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #f3c653;
+  }
 }
 
 .contacts-home__map {
   width: 100%;
   height: 220px;
+  background: #939393;
 
   border: 1px solid #bababa;
 
@@ -182,6 +233,11 @@ address {
 
   @media screen and (min-width: $tablet) {
     width: 535px;
+    height: 412px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 634px;
     height: 412px;
   }
 }
