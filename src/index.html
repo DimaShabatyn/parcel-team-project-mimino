@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MIMIHO</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- header -->
-    <section class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIMIHO</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <section class="header container">
+    <div class="header__wrap">
       <include src="./partials/header.html"></include>
-    </section>
-
-    <!-- main -->
-    <main>
-      <section class="hero">
-        <include src="./partials/hero-home.html"></include>
-      </section>
-  
-      <!-- restaurant-about -->
-        <include src="./partials/about-restaurant.html"></include>
-  
-      <!-- restaurant-details -->
-        <include src="./partials/details-restaurant.html"></include>
-  
-      <!-- hotel-about -->
-        <include src="./partials/about-hotel.html"></include>
-  
-      <!-- hotel-details -->
-        <include src="./partials/details-hotel.html"></include>
-  
-      <!-- contacts -->
-        <include src="./partials/contacts-home.html"></include>
-
-    </main>
-
-    <!--  footer -->
-    <section class="footer">
-      <include src="./partials/footer.html"></include>
-    </section>
-    
-    <!-- modal window -->
-    <div data-modal>
-      <include src="./partials/modal-table.html"></include>
+      <div class="header__social">
+        <include src="./partials/social.html"></include>
+      </div>
     </div>
-    <div data-modal>
-      <include src="./partials/modal-room.html"></include>
-    </div>
+  </section>
+  <!-- main -->
+  <main>
+    <!-- hero -->
+    <section class="hero hero--main container">
+      <include src="./partials/hero-home.html"></include>
+      <div class="hero__social">
+        <include src="./partials/social.html"></include>
+      </div>
+    </section>
+    <!-- restaurant-about -->
+    <include src="./partials/about-restaurant.html"></include>
 
-    <!-- scripts -->
-    <script src="./js/modal.js"></script>
-  </body>
+    <!-- restaurant-details -->
+    <include src="./partials/details-restaurant.html"></include>
+
+    <!-- hotel-about -->
+    <include src="./partials/about-hotel.html"></include>
+
+    <!-- hotel-details -->
+    <include src="./partials/details-hotel.html"></include>
+
+    <!-- contacts -->
+    <include src="./partials/contacts-home.html"></include>
+
+  </main>
+
+  <!--  footer -->
+  <section class="footer">
+    <include src="./partials/footer.html"></include>
+  </section>
+
+  <!-- modal window -->
+  <div data-modal>
+    <include src="./partials/modal-table.html"></include>
+  </div>
+  <div data-modal>
+    <include src="./partials/modal-room.html"></include>
+  </div>
+
+  <!-- scripts -->
+  <script src="./js/modal.js"></script>
+</body>
+
 </html>

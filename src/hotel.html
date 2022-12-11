@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Готель</title>
-        <link rel="stylesheet" href="./sass/index.scss" />
-    </head>
-    <body>
-        <!-- header -->
-        <section class="header">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готель</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+</head>
+
+<body>
+    <!-- header -->
+    <section class="header container">
+        <div class="header__wrap">
             <include src="./partials/header.html"></include>
+            <div class="header__social">
+                <include src="./partials/social.html"></include>
+            </div>
+        </div>
+    </section>
+    <!-- main -->
+    <main>
+        <!-- hero -->
+        <section class="hero hero--hotel container">
+            <include src="./partials/pages/hotel/hero-hotel.html"></include>
+            <div class="hero__social">
+                <include src="./partials/social.html"></include>
+            </div>
         </section>
-      
-        <!-- main -->
-        <main>
-            <section class="hero-hotel">
-                <include src="./partials/pages/hotel/hero-hotel.html"></include>
-            </section>
+        <!-- adult-lux -->
+        <include src="./partials/pages/hotel/adult-lux.html"></include>
 
-            <!-- adult-lux -->
-            <include src="./partials/pages/hotel/adult-lux.html"></include>
+        <!-- adult-third -->
+        <include src="./partials/pages/hotel/adult-third.html"></include>
 
-            <!-- adult-third -->
-            <include src="./partials/pages/hotel/adult-third.html"></include>
+        <!-- adult-two -->
+        <include src="./partials/pages/hotel/adult-two.html"></include>
+    </main>
 
-            <!-- adult-two -->
-            <include src="./partials/pages/hotel/adult-two.html"></include>
-        </main>
-        
-        <!--  footer -->
-        <section class="footer">
-            <include src="./partials/footer.html"></include>
-        </section>
-    
-    </body>
+    <!--  footer -->
+    <section class="footer">
+        <include src="./partials/footer.html"></include>
+    </section>
+
+</body>
+
 </html>
