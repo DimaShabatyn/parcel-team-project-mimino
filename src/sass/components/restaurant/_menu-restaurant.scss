@@ -12,14 +12,20 @@
   font-size: 32px;
   line-height: 1.16;
   color: rgba(0, 0, 0, 1);
+  text-align: left;
   padding-bottom: 16px;
 }
 
 .menu-restaurant__dish {
   display: block;
-  //   @include tablet {
-  //     display: flex;
-  //   }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 87px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 142px;
+  }
 }
 
 .menu-restaurant__table {
@@ -36,6 +42,9 @@
   color: rgba(0, 0, 0, 1);
   text-align: left;
   padding: 16px 0px;
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
 }
 
 .menu-restaurant__name {
@@ -48,6 +57,9 @@
   width: 60%;
   text-align: left;
   padding-bottom: 4px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .menu-restaurant__products {
@@ -59,26 +71,32 @@
   color: rgba(0, 0, 0, 1);
   width: 60%;
   text-align: left;
+  padding-bottom: 8px;
 }
 
 .menu-restaurant__weight {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 14px;
-  line-height: 1.21;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 1);
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .menu-restaurant__price {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.21;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 1);
   text-align: right;
+  padding-bottom: 8px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .menu-restaurant__dessert {
@@ -90,6 +108,7 @@
   color: rgba(0, 0, 0, 1);
   width: 60%;
   text-align: left;
+  padding-bottom: 8px;
 }
 
 .menu-restaurant__drink {
@@ -101,6 +120,7 @@
   color: rgba(0, 0, 0, 1);
   width: 60%;
   text-align: left;
+  padding-bottom: 8px;
 }
 
 .menu-restaurant__btn {
