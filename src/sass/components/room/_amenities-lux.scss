@@ -1,0 +1,71 @@
+$titleColor: #000000;
+$textColor: #7a7a7a;
+$linkColor: #c79002;
+$linkAccent: #f3c653;
+
+.hero-amenities {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.hero-amenities__title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+  color: $titleColor;
+}
+
+.hero-amenities__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $textColor;
+}
+.hero-amenities__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 384px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 30px;
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 64px;
+    width: 495px;
+  }
+}
+.hero-amenities__list {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.hero-amenities__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.hero-amenities__subtitle {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: $titleColor;
+}
+.hero-amenities__btn {
+  margin-bottom: 20px;
+}
+.hero-amenities__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.02em;
+
+  color: $linkColor;
+  &:hover,
+  &:focus {
+    color: $linkAccent;
+  }
+}
