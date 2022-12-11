@@ -2,7 +2,11 @@ address {
   font-style: normal;
 }
 
-.contacts.container {
+.contacts {
+  background-color: #fffdee;
+}
+
+.contacts .container {
   max-width: 414px;
   padding: 36px 15px 32px 15px;
 
@@ -15,10 +19,6 @@ address {
     max-width: 1280px;
     padding: 64px 85px 74px 85px;
   }
-}
-
-.contacts {
-  background-color: #fffdee;
 }
 
 .contacts-home__address {
@@ -110,7 +110,7 @@ address {
   }
 
   &:nth-child(2) .contacts-home__subtitle {
-    margin-right: 48px;
+    margin-right: 55px;
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 8px;
@@ -118,7 +118,7 @@ address {
   }
 
   &:last-child .contacts-home__item-wrap {
-    margin-left: 112px;
+    margin-left: 124px;
 
     @media screen and (min-width: $tablet) {
       margin-left: 0;
@@ -158,7 +158,7 @@ address {
   }
 
   .second-tel {
-    margin-left: 12px;
+    margin-left: 10px;
   }
 
   .contacts-home__list-item:last-child & {
@@ -221,7 +221,8 @@ address {
 .contacts-home__map {
   width: 100%;
   height: 220px;
-  background: #939393;
+
+  background: #000000;
 
   border: 1px solid #bababa;
 
@@ -231,10 +232,12 @@ address {
   @media screen and (min-width: $tablet) {
     width: 535px;
     height: 412px;
+    background: #939393;
   }
 
   @media screen and (min-width: $desktop) {
     width: 634px;
     height: 412px;
+    background: #939393;
   }
 }
