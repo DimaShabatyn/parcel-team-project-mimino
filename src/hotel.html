@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Готель</title>
-        <link rel="stylesheet" href="./sass/index.scss" />
-    </head>
-    <body>
-        <!-- header -->
-        <section class="header">
-            <include src="./partials/header.html"></include>
-        </section>
-      
-        <!-- main -->
-        <main>
-            <section class="hero-hotel">
-                <include src="./partials/pages/hotel/hero-hotel.html"></include>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Готель</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <section class="header">
+      <include src="./partials/header.html"></include>
+    </section>
 
-            <!-- adult-lux -->
-            <include src="./partials/pages/hotel/adult-lux.html"></include>
+    <!-- main -->
+    <main>
+      <section class="hero-hotel">
+        <include src="./partials/pages/hotel/hero-hotel.html"></include>
+      </section>
 
-            <!-- adult-third -->
-            <include src="./partials/pages/hotel/adult-third.html"></include>
+      <!-- adult-lux -->
+      <include src="./partials/pages/hotel/adult-lux.html"></include>
 
-            <!-- adult-two -->
-            <include src="./partials/pages/hotel/adult-two.html"></include>
-        </main>
-        
-        <!--  footer -->
-        <section class="footer">
-            <include src="./partials/footer.html"></include>
-        </section>
-    
-    </body>
+      <!-- adult-third -->
+      <include src="./partials/pages/hotel/adult-third.html"></include>
+
+      <!-- adult-two -->
+      <include src="./partials/pages/hotel/adult-two.html"></include>
+    </main>
+
+    <!--  footer -->
+    <section class="footer">
+      <include src="./partials/footer.html"></include>
+    </section>
+
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!-- slick js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- base js -->
+    <script type="module" src="./js/slider-two.js"></script>
+  </body>
 </html>

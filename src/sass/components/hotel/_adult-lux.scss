@@ -1,0 +1,159 @@
+.container-adult {
+  position: relative;
+  margin: 0 auto;
+
+  @media screen and (min-width: 414px) {
+    width: 414px;
+    padding: 32px 15px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 1024px;
+    padding: 0 47px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1280px;
+    padding: 0 85px;
+  }
+}
+
+.slogan {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+
+  color: #b4b4b4;
+  @media screen and (min-width: 414px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+.adult-logo {
+  color: #494848;
+  @media screen and (min-width: 414px) {
+    font-size: 40px;
+    line-height: 1.075;
+    margin-top: 8px;
+  }
+}
+
+.adult-lux__title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+  @media screen and (min-width: 414px) {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-top: 32px;
+  }
+}
+
+.adult-lux__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  color: #5f5f5f;
+  @media screen and (min-width: 414px) {
+    width: 258px;
+    font-size: 12px;
+    line-height: 1.25;
+    margin-top: 12px;
+  }
+}
+
+.img-room {
+  @media screen and (min-width: 414px) {
+  }
+  margin-top: 32px;
+}
+
+.img-adult {
+  @media screen and (min-width: 414px) {
+    display: inline-block;
+    width: 244px;
+    transform: translateX(58%);
+  }
+}
+
+.slider {
+  @media screen and (min-width: 414px) {
+    position: absolute;
+    transform: translateX(-30%);
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+// .slick-slider {
+//   @media screen and (min-width: 414px) {
+//     width: 210px;
+//     display: flex;
+//     gap: 16px;
+//   }
+// }
+
+.img-slider {
+  @media screen and (min-width: 414px) {
+  }
+}
+
+.icon-arrow {
+  @media screen and (min-width: 414px) {
+    display: flex;
+    gap: 32px;
+    margin-top: 20px;
+  }
+}
+
+.btn-adult {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  @media screen and (min-width: 414px) {
+    padding-left: 95px;
+  }
+}
+
+.details-btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #f3c653;
+  box-sizing: border-box;
+
+  width: 236px;
+  height: 48px;
+
+  background: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+}
+
+.price-btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #f3c653;
+  box-sizing: border-box;
+
+  width: 236px;
+  height: 48px;
+
+  background: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+}
