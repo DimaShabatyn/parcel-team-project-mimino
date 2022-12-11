@@ -232,10 +232,19 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 384px;
 }
 @media screen and (min-width: 1024px) {
   .hero-amenities__column {
     flex-direction: row;
+    gap: 30px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-amenities__column {
+    gap: 64px;
+    width: 495px;
   }
 }
 
