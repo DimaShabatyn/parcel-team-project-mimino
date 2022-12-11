@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 html {
   box-sizing: border-box;
@@ -189,22 +188,277 @@ img {
   }
 }
 
-​ .hero__logo {
+.hero__logo {
   text-align: center;
   font-size: 96px;
   color: #ffffff;
 }
 @media screen and (min-width: 1024px) {
-  ​ .hero__logo {
+  .hero__logo {
     font-size: 128px;
   }
 }
-​ .hero__logo span {
+.hero__logo span {
   margin-left: 0.3em;
+}
+
+.section-homepage__logo {
+  font-size: 64px;
+  color: #828282;
+}
+@media screen and (min-width: 1024px) {
+  .section-homepage__logo {
+    font-size: 40px;
+  }
+}
+
+.section-all__logo {
+  font-size: 64px;
+  color: #494848;
+}
+@media screen and (min-width: 1024px) {
+  .section-all__logo {
+    font-size: 40px;
+  }
 }
 
 .hero-home {
   background-color: blueviolet;
+}
+
+address {
+  font-style: normal;
+}
+
+.contacts {
+  background-color: #fffdee;
+}
+
+.contacts .container {
+  max-width: 414px;
+  padding: 36px 15px 32px 15px;
+}
+@media screen and (min-width: 1024px) {
+  .contacts .container {
+    max-width: 1024px;
+    padding: 56px 47px 44px 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts .container {
+    max-width: 1280px;
+    padding: 64px 85px 74px 85px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts-home__address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contacts-home__logo {
+  margin-bottom: 12px;
+  font-family: "Film P3", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__logo {
+    font-size: 64px;
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-home__logo {
+    color: #828282;
+    margin-bottom: 16px;
+  }
+}
+
+.contacts-home__text {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #5f5f5f;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__text {
+    margin-bottom: 52px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-home__text {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts-home__list {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__list {
+    margin-bottom: 0px;
+  }
+}
+
+.contacts-home__list-item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__list-item {
+    display: block;
+  }
+}
+.contacts-home__list-item:nth-child(-n+2) {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__list-item:first-child {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__list-item:nth-child(2) {
+    margin-bottom: 0px;
+  }
+}
+.contacts-home__list-item:first-child .contacts-home__subtitle {
+  margin-right: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__list-item:first-child .contacts-home__subtitle {
+    margin-bottom: 8px;
+  }
+}
+.contacts-home__list-item:nth-child(2) .contacts-home__subtitle {
+  margin-right: 55px;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__list-item:nth-child(2) .contacts-home__subtitle {
+    margin-bottom: 8px;
+  }
+}
+.contacts-home__list-item:last-child .contacts-home__item-wrap {
+  margin-left: 124px;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__list-item:last-child .contacts-home__item-wrap {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+}
+.contacts-home__list-item:nth-child(n+2) .contacts-home__item-wrap {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__list-item:nth-child(n+2) .contacts-home__item-wrap {
+    width: auto;
+  }
+}
+
+.contacts-home__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #c79002;
+}
+
+.contacts-home__item-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px;
+  background: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__item-wrap {
+    display: inline-flex;
+  }
+}
+.contacts-home__item-wrap .second-tel {
+  margin-left: 10px;
+}
+.contacts-home__list-item:last-child .contacts-home__item-wrap {
+  flex-wrap: nowrap;
+}
+
+.contacts-home__icon {
+  fill: #c79002;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.contacts-home__tel {
+  font-size: 14px;
+  line-height: 1.21;
+  color: #494848;
+  transition: color 250ms linear;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__tel {
+    color: #828282;
+  }
+}
+.contacts-home__tel:hover, .contacts-home__tel:focus {
+  color: #f3c653;
+}
+
+.contacts-home__address-link {
+  display: inline-block;
+  max-width: 183px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #494848;
+  transition: color 250ms linear;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__address-link {
+    max-width: 233px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__address-link {
+    color: #828282;
+  }
+}
+.contacts-home__address-link:hover, .contacts-home__address-link:focus {
+  color: #f3c653;
+}
+
+.contacts-home__map {
+  width: 100%;
+  height: 220px;
+  background: #000000;
+  border: 1px solid #bababa;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-home__map {
+    width: 535px;
+    height: 412px;
+    background: #939393;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-home__map {
+    width: 634px;
+    height: 412px;
+    background: #939393;
+  }
 }
 
 .hero-amenities {
@@ -214,37 +468,51 @@ img {
 
 .hero-amenities__title {
   margin-bottom: 16px;
+  font-family: "Times New Roman";
+  font-style: normal;
   font-weight: 400;
   font-size: 32px;
+  text-transform: uppercase;
   line-height: 1.16;
   color: #000000;
 }
 
 .hero-amenities__text {
+  max-width: 384px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #7a7a7a;
 }
+@media screen and (min-width: 1024px) {
+  .hero-amenities__text {
+    max-width: 400px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-amenities__text.hero-amenities__text--view {
+    min-width: 757px;
+    width: 757px;
+  }
+}
 
 .hero-amenities__column {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 384px;
 }
 @media screen and (min-width: 1024px) {
   .hero-amenities__column {
     flex-direction: row;
-    gap: 30px;
-    width: 450px;
+    gap: 80px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-amenities__column {
-    gap: 64px;
-    width: 495px;
+    gap: 159px;
   }
 }
 
@@ -259,17 +527,57 @@ img {
 
 .hero-amenities__subtitle {
   margin-bottom: 16px;
+  font-family: "Times New Roman";
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
+  text-transform: uppercase;
   line-height: 1.17;
   color: #000000;
 }
 
+.hero-amenities__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .hero-amenities__wrapper {
+    align-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
 .hero-amenities__btn {
   margin-bottom: 20px;
+  padding: 20px 43px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+}
+.hero-amenities__btn:hover, .hero-amenities__btn:focus {
+  background-color: #f3c653;
+  color: #000000;
+}
+@media screen and (min-width: 1024px) {
+  .hero-amenities__btn {
+    padding: 18px 38px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
 }
 
 .hero-amenities__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -278,6 +586,19 @@ img {
 }
 .hero-amenities__link:hover, .hero-amenities__link:focus {
   color: #f3c653;
+}
+@media screen and (min-width: 1024px) {
+  .hero-amenities__link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.hero-amenities__arrow {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  fill: currentColor;
 }
 
 .footer {
