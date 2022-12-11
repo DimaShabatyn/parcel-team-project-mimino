@@ -4,6 +4,14 @@
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
+  @media screen and (min-width: 1024px) {
+    text-align: right;
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 60px;
+  }
 }
 
 .menu-restaurant__title {
@@ -14,6 +22,9 @@
   color: rgba(0, 0, 0, 1);
   text-align: left;
   padding-bottom: 16px;
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 24px;
+  }
 }
 
 .menu-restaurant__dish {
@@ -42,6 +53,9 @@
   color: rgba(0, 0, 0, 1);
   text-align: left;
   padding: 16px 0px;
+  @media screen and (min-width: 1024px) {
+    padding: 20px 0px;
+  }
   @media screen and (min-width: 1280px) {
     font-size: 24px;
   }
@@ -123,7 +137,7 @@
   padding-bottom: 8px;
 }
 
-.menu-restaurant__btn {
+.menu-restaurant__button {
   background-color: #000000;
   border: 2px solid #fffdee;
   border-radius: 25px;
@@ -137,10 +151,16 @@
   margin-top: 32px;
   transition: background-color 250ms linear, border 250ms linear,
     color 250ms linear;
+  @media screen and (min-width: 1024px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 40px;
+  }
 }
 
-.menu-restaurant__btn:hover,
-.menu-restaurant__btn:focus {
+.menu-restaurant__button:hover,
+.menu-restaurant__button:focus {
   background-color: #ffffff;
   border: 2px solid #f3c653;
   color: #f3c653;
