@@ -1,0 +1,243 @@
+address {
+  font-style: normal;
+}
+
+.contacts {
+  background-color: #fffdee;
+}
+
+.contacts .container {
+  max-width: 414px;
+  padding: 36px 15px 32px 15px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+    padding: 56px 47px 44px 47px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 64px 85px 74px 85px;
+  }
+}
+
+.contacts-home__address {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contacts-home__logo {
+  margin-bottom: 12px;
+
+  font-family: 'Film P3', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+
+  color: #494848;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 64px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    color: #828282;
+    margin-bottom: 16px;
+  }
+}
+
+.contacts-home__text {
+  margin-bottom: 16px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #5f5f5f;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts-home__list {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0px;
+  }
+}
+
+.contacts-home__list-item {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  &:nth-child(-n + 2) {
+    margin-bottom: 16px;
+  }
+  &:first-child {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &:first-child .contacts-home__subtitle {
+    margin-right: 22px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &:nth-child(2) .contacts-home__subtitle {
+    margin-right: 55px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &:last-child .contacts-home__item-wrap {
+    margin-left: 124px;
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 0;
+      margin-top: 48px;
+    }
+  }
+
+  &:nth-child(n + 2) .contacts-home__item-wrap {
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+      width: auto;
+    }
+  }
+}
+
+.contacts-home__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #c79002;
+}
+
+.contacts-home__item-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 8px;
+
+  background: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+  }
+
+  .second-tel {
+    margin-left: 10px;
+  }
+
+  .contacts-home__list-item:last-child & {
+    flex-wrap: nowrap;
+  }
+}
+
+.contacts-home__icon {
+  fill: #c79002;
+
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.contacts-home__tel {
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: #494848;
+
+  @media screen and (min-width: $tablet) {
+    color: #828282;
+  }
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #f3c653;
+  }
+}
+
+.contacts-home__address-link {
+  display: inline-block;
+  max-width: 183px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+
+  color: #494848;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 233px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    color: #828282;
+  }
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #f3c653;
+  }
+}
+
+.contacts-home__map {
+  width: 100%;
+  height: 220px;
+
+  background: #000000;
+
+  border: 1px solid #bababa;
+
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @media screen and (min-width: $tablet) {
+    width: 535px;
+    height: 412px;
+    background: #939393;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 634px;
+    height: 412px;
+    background: #939393;
+  }
+}
