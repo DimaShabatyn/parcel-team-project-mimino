@@ -6,7 +6,7 @@
     <symbol id="arrow-right" viewBox="0 0 32 32">
       <path d="M22.492 7.586 21.078 9l6 6H1v2h26.078l-6 6 1.414 1.414L30.906 16l-8.414-8.414z"/>
     </symbol>
-    <symbol id="carrow-left" viewBox="0 0 32 32">
+    <symbol id="arrow-left" viewBox="0 0 32 32">
       <path d="M31.083 15H5.005l6-6-1.414-1.414L1.177 16l8.414 8.414L11.005 23l-6-6h26.078v-2z"/>
     </symbol>
     <symbol id="facebook" viewBox="0 0 32 32">

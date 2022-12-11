@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIMIHO</title>
+
+    <!-- slick slider-hero -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -13,16 +17,16 @@
       <include src="./partials/header.html"></include>
     </section>
 
-      <!-- main -->
+    <!-- main -->
     <main>
       <section class="hero">
         <include src="./partials/hero-home.html"></include>
       </section>
   
-    <!-- restaurant-about -->
+      <!-- restaurant-about -->
         <include src="./partials/about-restaurant.html"></include>
   
-    <!-- restaurant-details -->
+      <!-- restaurant-details -->
         <include src="./partials/details-restaurant.html"></include>
   
       <!-- hotel-about -->
@@ -35,7 +39,6 @@
         <include src="./partials/contacts-home.html"></include>
 
     </main>
-
     <!--  footer -->
     <section class="footer">
       <include src="./partials/footer.html"></include>
@@ -51,5 +54,13 @@
 
     <!-- scripts -->
     <script src="./js/modal.js"></script>
+
+    <!-- data slick -->
+    <script type="module" src="./js/slider-hero.js"></script>
+    <!-- slick jquery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- slick js -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
