@@ -2,15 +2,16 @@
 @import './utils/variables';
 @import './base/common';
 @import './utils/breakpoints';
+@import './utils/mixins';
+@import './layout/buttons';
 @import './base/global';
 @import './utils/visually-hidden';
 @import './base/container';
-
+@import './utils/mixins';
 
 // fonts
 @import './base/fonts';
-
-
+@import './layout/buttons';
 // header (all)
 @import './layout/header';
 @import './layout/logo';
@@ -35,7 +36,7 @@
 @import './components/hotel/adult-two';
 
 // room
-@import './components/room/hero-room-lux'; 
+@import './components/room/hero-room-lux';
 @import './components/room/amenities-lux';
 @import './components/room/hero-room-third';
 @import './components/room/amenities-third';

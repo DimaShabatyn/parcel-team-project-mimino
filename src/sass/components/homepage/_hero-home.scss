@@ -1,3 +1,361 @@
-.hero-home {
-    background-color: blueviolet;
+.hero {
+  background-color: #0e0c07;
+
+  &__container {
+    position: relative;
+
+    padding-top: 181px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+      padding-top: 188px;
+      padding-bottom: 15px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 164px;
+      padding-bottom: 64px;
+    }
+    background-color: #474747;
+  }
+
+  &__social {
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &__main {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero/hero-main-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-main-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-main-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/hero-main-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-main-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/hero-main-desk-2x.jpg);
+      }
+    }
+  }
+
+  &__restaurant {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero/hero-rest-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-rest-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-rest-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/hero-rest-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-rest-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/hero-rest-desk-2x.jpg);
+      }
+    }
+  }
+
+  &__hotel {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero/hero-hotel-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-hotel-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-hotel-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/hero-hotel-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/hero-hotel-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/hero-hotel-desk-2x.jpg);
+      }
+    }
+  }
+
+  &__subtitel {
+    margin-bottom: 40px;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ffffff;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 56px;
+      font-size: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__subtitel--hotel {
+    margin-bottom: 190px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 234px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 242px;
+    }
+  }
+
+  &__slogan {
+    margin-bottom: 113px;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 137px;
+      font-size: 36px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    margin: 0 auto 24px;
+
+    & + .hero__button {
+      margin-bottom: 58px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-right: 0;
+      margin-bottom: 0;
+
+      & + .hero__button {
+        margin-left: 40px;
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: 1280px) {
+        & + .hero__button {
+          margin-left: 60px;
+        }
+      }
+    }
+  }
+}
+
+.address {
+  @media screen and (max-width: 1023px) {
+    position: absolute;
+    top: 105px;
+    right: 15px;
+  }
+
+  @media screen and (min-width: 351px) {
+    top: 64px;
+  }
+  display: inline-block;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  &__link {
+    padding: 7px;
+    display: flex;
+
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+
+    color: #e5e5e5;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: #c79002;
+    }
+
+    &:hover > .address__icon,
+    &:focus > .address__icon {
+      fill: #c79002;
+    }
+  }
+
+  &__icon {
+    margin-right: 8px;
+    align-self: center;
+    fill: #f3c653;
+    transition: fill 250ms linear;
+  }
+}
+
+.social__list {
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    margin-top: 25px;
+  }
+  display: flex;
+
+  list-style: none;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.social__link {
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #f3c653;
+
+  &:hover > .social__icon,
+  &:focus > .social__icon {
+    fill: #c79002;
+  }
+
+  & span {
+    display: none;
+  }
+}
+
+.social__icon {
+  fill: #f3c653;
+  transition: fill 250ms linear;
 }

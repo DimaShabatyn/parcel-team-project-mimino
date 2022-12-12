@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Готель</title>
-        <link rel="stylesheet" href="./sass/index.scss" />
-    </head>
-    <body>
-        <!-- header -->
-        <section class="header">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готель</title>
+    <!-- link slider -->
+    <include src="../src/partials/slider/link-slider.html"></include>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <section class="header container">
+        <div class="header__wrap">
             <include src="./partials/header.html"></include>
-        </section>
-      
-        <!-- main -->
-        <main>
-            <section class="hero-hotel">
+            <div class="header__social">
+                <include src="./partials/social.html"></include>
+            </div>
+        </div>
+    </section>
+    <!-- main -->
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero__container hero__hotel container">
                 <include src="./partials/pages/hotel/hero-hotel.html"></include>
-            </section>
-
-            <!-- adult-lux -->
-            <include src="./partials/pages/hotel/adult-lux.html"></include>
-
-            <!-- adult-third -->
-            <include src="./partials/pages/hotel/adult-third.html"></include>
-
-            <!-- adult-two -->
-            <include src="./partials/pages/hotel/adult-two.html"></include>
-            
-        </main>
-        
-        <!--  footer -->
-        <section class="footer">
-            <include src="./partials/footer.html"></include>
+                <div class="hero__social">
+                    <include src="./partials/social.html"></include>
+                </div>
+            </div>
         </section>
-    
-    </body>
+        <!-- adult-lux -->
+        <include src="./partials/pages/hotel/adult-lux.html"></include>
+
+        <!-- adult-third -->
+        <include src="./partials/pages/hotel/adult-third.html"></include>
+
+        <!-- adult-two -->
+        <include src="./partials/pages/hotel/adult-two.html"></include>
+    </main>
+
+    <!--  footer -->
+    <section class="footer">
+        <include src="./partials/footer.html"></include>
+    </section>
+
+    <!-- modal window -->
+    <div data-modal>
+        <include src="./partials/modal-table.html"></include>
+    </div>
+    <div data-modal>
+        <include src="./partials/modal-room.html"></include>
+    </div>
+
+    <!-- scripts -->
+    <script src="./js/modal.js"></script>
+
+    <include src="../src/partials/slider/script-slider.html"></include>
+    <include src="./js/slider-hero.js"></include>
+    <include src="./js/slider-third.js"></include>
+    <include src="./js/slider-two.js"></include>
+
+</body>
+
 </html>

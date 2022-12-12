@@ -1,23 +1,147 @@
 .header {
-    background-color: aqua;
+  position: relative;
+
+  &__wrap {
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 384px;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 930px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1110px;
+    }
+
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      left: 47px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 85px;
+    }
+
+    z-index: 12;
+  }
+
+  &__social {
+    margin-left: 60px;
+
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
 }
 
-.logo {
-    font-family: 'Film P3', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
-    text-decoration: none;
-    font-size: 40px;
-    color: #7c0d0d;
-}
-  
-.nav__link {
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  &__list {
+    display: flex;
+
+    @media screen and (max-width: 350px) {
+      margin-left: auto;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+
+    @media screen and (max-width: 380px) {
+      margin-left: 20px;
+    }
+
+    &:last-of-type {
+      margin-left: 20px;
+      @media screen and (min-width: 1024px) {
+        margin-left: 72px;
+      }
+    }
+  }
+
+  &__link {
+    @media screen and (min-width: 1024px) {
+      margin-right: 32px;
+      padding-top: 6px;
+      padding-bottom: 10px;
+    }
+
+    display: flex;
+    align-items: center;
+
     text-decoration: none;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.2;
-  
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
+
     color: #f3c653;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: #c79002;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+
+    @media screen and (min-width: 1024px) {
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
+    }
+  }
+
+  &__tel {
+    padding: 7px;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: #c79002;
+    }
+
+    &:hover > .nav__icon,
+    &:focus > .nav__icon {
+      fill: #c79002;
+    }
+  }
+
+  &__icon {
+    fill: #f3c653;
+    transition: fill 250ms linear;
+  }
+
+  &__hidden {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
 }
