@@ -1,0 +1,165 @@
+.restaurant-about {
+    background: #FFFDEE;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    @media screen and (min-width:1024px) {
+        padding-top: 120px;
+        padding-bottom: 32px;
+        
+    }
+    @media screen and (min-width:1280px) {
+        padding-bottom: 50px;
+    }
+}
+.restaurant-about__container {
+    position: relative;
+  
+}
+.restaurant-about__title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #B4B4B4;
+    margin-bottom: 12px;
+@media screen and (min-width:1024px) {
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+}
+.restaurant-about__logo {
+    color: #494848;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    @media screen and (min-width:1024px) {
+        font-size: 64px;
+        margin-bottom: 24px;
+    }
+}
+.restaurant-about__items{
+    margin-bottom: 329px;
+    @media screen and (min-width:1024px) {
+        margin-bottom: 230px;  
+    }
+    @media screen and (min-width:1280px) {
+        margin-bottom: 175px;
+    }
+}
+.restaurant-about__card:last-child {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 382px;
+    
+    @media screen and (min-width:1024px) {
+        margin-top: 142px;
+        gap: 48px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-top: 162px;
+        gap: 32px;
+    }
+}
+.restaurant-about__text {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #5F5F5F;  
+    @media screen and (min-width:1024px) {
+        font-size: 16px;
+    }
+}
+.restaurant-about__text:first-child {
+    display: inline-block;
+    max-width: 258px;
+    @media screen and (min-width:1024px) {
+        max-width: 439px;
+    }
+    @media screen and (min-width:1280px) {
+        max-width: 518px;
+    }
+}
+.restaurant-about__text:last-child{
+    max-width: 163px;
+    color: #C79002;
+    max-width: 163px;
+    @media screen and (min-width:1024px) {
+        max-width: 312px;
+    }
+}
+.restaurant-about__img {  
+    display: inline-block;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+.restaurant-about__wrap{
+    position: absolute;
+    top: 194px;
+    right: 15px;
+    @media screen and (min-width:1024px) {
+        top: -153px;
+        right: 112px;
+    }
+}
+.img-thumb{
+    margin: 0;
+    max-width: 100%;
+    @media screen and (min-width:1024px) {
+        height: auto;
+    }
+}
+ // swiper style
+.swiper {
+    width: 100%;
+    height: 100%; 
+    width: 533px;  
+    position: absolute;
+    top: 858px;
+    left: 69px;
+  }
+  .swiper-wrapper{
+    display: flex;
+    gap: 24px;
+    
+  }
+
+  .swiper-slide {
+    // text-align: center;
+    // background: #fff;
+
+    /* Center slide text vertically */
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: -webkit-flex;
+    
+    // -webkit-box-pack: center;
+    // -ms-flex-pack: center;
+    // -webkit-justify-content: center;
+    // -webkit-box-align: center;
+    // -ms-flex-align: center;
+    // -webkit-align-items: center;
+    // justify-content: center;
+    // align-items: center;
+
+    
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+
+  .swiper-slide .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    margin: 0;
+    height: auto;
+  }
