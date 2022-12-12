@@ -1,18 +1,19 @@
 .container-adult {
-  position: relative;
-  margin: 0 auto;
+  background-color: #fffdee;
 
   @media screen and (min-width: 414px) {
     width: 414px;
     padding: 32px 15px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 1024px) {
+    position: relative;
     width: 1024px;
-    padding: 0 47px;
+    padding: 120px 47px;
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1280px) {
+    position: relative;
     width: 1280px;
-    padding: 0 85px;
+    padding: 120px 85px;
   }
 }
 
@@ -20,20 +21,33 @@
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
-
   color: #b4b4b4;
-  @media screen and (min-width: 414px) {
-    font-size: 20px;
-    line-height: 1.15;
+  font-size: 20px;
+  line-height: 1.15;
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+    line-height: 1.16;
   }
 }
 
 .adult-logo {
+  font-size: 40px;
+  line-height: 1.07;
+  margin-top: 8px;
   color: #494848;
-  @media screen and (min-width: 414px) {
-    font-size: 40px;
-    line-height: 1.075;
-    margin-top: 8px;
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 1.08;
+    margin-top: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 1.08;
+    margin-top: 4px;
   }
 }
 
@@ -42,12 +56,19 @@
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.05em;
-
+  font-size: 24px;
+  line-height: 1.16;
+  margin-top: 32px;
   color: #000000;
-  @media screen and (min-width: 414px) {
-    font-size: 24px;
-    line-height: 1.16;
-    margin-top: 32px;
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-top: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-top: 72px;
   }
 }
 
@@ -56,57 +77,91 @@
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.02em;
-
+  width: 258px;
+  font-size: 12px;
+  line-height: 1.25;
+  margin-top: 12px;
   color: #5f5f5f;
-  @media screen and (min-width: 414px) {
-    width: 258px;
-    font-size: 12px;
+  @media screen and (min-width: 1024px) {
+    width: 439px;
+    font-size: 16px;
     line-height: 1.25;
-    margin-top: 12px;
+    margin-top: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 400px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 24px;
   }
 }
 
+// .img-room {
+//   position: relative;
+// }
+
 .img-room {
-  @media screen and (min-width: 414px) {
-  }
   margin-top: 32px;
+  padding-left: 155px;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    transform: translateY(-90%);
+    right: 50px;
+    margin-top: 0;
+    padding-left: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    transform: translateY(-90%);
+  }
 }
 
 .img-adult {
   @media screen and (min-width: 414px) {
-    display: inline-block;
-    width: 244px;
-    transform: translateX(58%);
+    // display: inline-block;
+    // width: 244px;
+    // transform: translateX();
   }
 }
 
 .slider {
-  @media screen and (min-width: 414px) {
-    position: absolute;
-    transform: translateX(-30%);
-    margin-top: 32px;
-    margin-bottom: 20px;
+  position: absolute;
+  transform: translateX(-30%);
+  margin-top: 32px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-top: 176px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 188px;
   }
 }
 
-// .slick-slider {
-//   @media screen and (min-width: 414px) {
-//     width: 210px;
-//     display: flex;
-//     gap: 16px;
-//   }
-// }
-
 .img-slider {
-  @media screen and (min-width: 414px) {
-  }
+  display: flex;
+  gap: 16px;
+}
+
+.slick-slider {
+  display: flex;
+  gap: 16px;
+}
+
+.slick-track {
+  display: flex;
+  gap: 16px;
 }
 
 .icon-arrow {
-  @media screen and (min-width: 414px) {
-    display: flex;
-    gap: 32px;
-    margin-top: 20px;
+  display: flex;
+  gap: 32px;
+  margin-top: 20px;
+  @media screen and (min-width: 1024px) {
+    padding-left: 377px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 542px;
   }
 }
 
@@ -115,18 +170,25 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 20px;
-  @media screen and (min-width: 414px) {
-    padding-left: 95px;
+  padding-left: 95px;
+  @media screen and (min-width: 1024px) {
+    padding-left: 266px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 319px;
   }
 }
 
 .details-btn {
+  display: inline-block;
+  padding-top: 10px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  text-align: center;
 
   color: #f3c653;
   box-sizing: border-box;
@@ -140,6 +202,9 @@
 }
 
 .price-btn {
+  display: inline-block;
+  padding-top: 10px;
+  text-align: center;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
