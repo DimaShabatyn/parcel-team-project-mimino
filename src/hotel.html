@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Готель</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
     <!-- link slider -->
     <include src="../src/partials/slider/link-slider.html"></include>
+    <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -38,21 +38,19 @@
     </section>
 
     <!-- modal window -->
-<div data-modal>
-  <include src="./partials/modal-table.html"></include>
-</div>
-<div data-modal>
-  <include src="./partials/modal-room.html"></include>
-</div>
+    <div data-modal>
+      <include src="./partials/modal-table.html"></include>
+    </div>
+    <div data-modal>
+      <include src="./partials/modal-room.html"></include>
+    </div>
 
-<!-- scripts -->
-<script src="./js/modal.js"></script>
+    <!-- scripts -->
+    <script src="./js/modal.js"></script>
 
-  <include src="../src/partials/slider/script-slider.html"></include>
-  <include src="./js/slider-hero.js"></include>
-  <include src="./js/slider-third.js"></include>
-  <include src="./js/slider-two.js"></include>
-
-</body>
-
+    <include src="../src/partials/slider/script-slider.html"></include>
+    <include src="./js/slider-hero.js"></include>
+    <include src="./js/slider-third.js"></include>
+    <script src="./js/slider-two.js"></script>
+  </body>
 </html>
