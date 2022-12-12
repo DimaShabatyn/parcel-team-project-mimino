@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MIMIHO</title>
-    <!-- link slider -->
-    <include src="../src/partials/slider/link-slider.html"></include>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- header -->
-    <section class="header">
-    <section class="header container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIMIHO</title>
+  <!-- link slider -->
+  <include src="../src/partials/slider/link-slider.html"></include>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <section class="header container">
     <div class="header__wrap">
       <include src="./partials/header.html"></include>
       <div class="header__social">
@@ -23,10 +24,12 @@
   <!-- main -->
   <main>
     <!-- hero -->
-    <section class="hero hero--main container">
-      <include src="./partials/hero-home.html"></include>
-      <div class="hero__social">
-        <include src="./partials/social.html"></include>
+    <section class="hero">
+      <div class="hero__container hero__main container">
+        <include src="./partials/hero-home.html"></include>
+        <div class="hero__social">
+          <include src="./partials/social.html"></include>
+        </div>
       </div>
     </section>
     <!-- restaurant-about -->
@@ -62,12 +65,13 @@
   <!-- scripts -->
   <script src="./js/modal.js"></script>
 
-    <include src="../src/partials/slider/script-slider.html"></include>
-    <include src="./js/slider-hero.js"></include>
-    <include src="./js/slider-third.js"></include>
-    <include src="./js/slider-two.js"></include>
+  <include src="../src/partials/slider/script-slider.html"></include>
+  <include src="./js/slider-hero.js"></include>
+  <include src="./js/slider-third.js"></include>
+  <include src="./js/slider-two.js"></include>
 
-    <!-- scripts -->
-    <script src="./js/modal.js"></script>
-  </body>
+  <!-- scripts -->
+  <script src="./js/modal.js"></script>
+</body>
+
 </html>
