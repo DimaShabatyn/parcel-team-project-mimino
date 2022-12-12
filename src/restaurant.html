@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ресторан</title>
+    <!-- link slider -->
+    <include src="../src/partials/slider/link-slider.html"></include>
     <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
 </head>
 
 <body>
@@ -22,10 +25,12 @@
     <!-- main -->
     <main>
         <!-- hero -->
-        <section class="hero hero--restaurant container">
-            <include src="./partials/pages/restaurant/hero-restaurant.html"></include>
-            <div class="hero__social">
-                <include src="./partials/social.html"></include>
+        <section class="hero">
+            <div class="hero__container hero__restaurant container">
+                <include src="./partials/pages/restaurant/hero-restaurant.html"></include>
+                <div class="hero__social">
+                    <include src="./partials/social.html"></include>
+                </div>
             </div>
         </section>
 
@@ -40,6 +45,22 @@
     <section class="footer">
         <include src="./partials/footer.html"></include>
     </section>
+
+    <!-- modal window -->
+    <div data-modal>
+        <include src="./partials/modal-table.html"></include>
+    </div>
+    <div data-modal>
+        <include src="./partials/modal-room.html"></include>
+    </div>
+
+    <!-- scripts -->
+    <script src="./js/modal.js"></script>
+
+    <include src="../src/partials/slider/script-slider.html"></include>
+    <include src="./js/slider-hero.js"></include>
+    <include src="./js/slider-third.js"></include>
+    <include src="./js/slider-two.js"></include>
 
 </body>
 
