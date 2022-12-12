@@ -91,6 +91,8 @@ $btnColor: #ffffff;
   color: $btnColor;
   border: 1px solid #f3c653;
   border-radius: 25px;
+  transition: background-color 250ms linear;
+  transition: color 250ms linear;
   &:hover,
   &:focus {
     background-color: $linkAccent;
@@ -114,6 +116,7 @@ $btnColor: #ffffff;
   letter-spacing: 0.02em;
 
   color: $linkColor;
+  transition: color 250ms linear;
   &:hover,
   &:focus {
     color: $linkAccent;
