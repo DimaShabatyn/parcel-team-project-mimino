@@ -1,7 +1,7 @@
 <section class="hero-amenities">
   <div class="container">
     <h2 class="hero-amenities__title">Зручності у номері</h2>
-    <p class="hero-amenities__text">
+    <p class="hero-amenities__text hero-amenities__text--view">
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
@@ -66,10 +66,13 @@
       </li>
     </ul>
     <div class="hero-amenities__wrapper">
-      <button class="hero-amenities__btn">Оформити бронювання</button>
+      <button class="hero-amenities__btn" type="button">
+        Оформити бронювання
+      </button>
       <a class="hero-amenities__link" href="./hotel.html"
-        >Повернутися до перегляду номерів</a
-      >
+        >Повернутися до перегляду номерів<svg class="hero-amenities__arrow">
+          <use href="./images/sprite.svg#arrow-right"></use></svg
+      ></a>
     </div>
   </div>
 </section>
