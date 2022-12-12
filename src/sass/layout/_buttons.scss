@@ -1,40 +1,40 @@
 .button {
-    padding: 14px;
-    min-width: 232px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;
-    line-height: 1.25;
-    color: #f3c653;
+  padding: 14px;
+  min-width: 232px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.25;
+  color: #f3c653;
 
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    transition: background-color 250ms linear, border 250ms linear,
-      color 250ms linear;
-  
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  transition: background-color 250ms linear, border 250ms linear,
+    color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+  }
+
+  &--gray {
+    background-color: rgba(0, 0, 0, 0.4);
     &:hover,
     &:focus {
-      background-color: #ffffff;
-    }
-
-    &--gray {
-      background-color: rgba(0, 0, 0, 0.4);
-      &:hover,
-      &:focus {
-        color: #c79002;
-      }
-    }
-    &--black {
-      background-color: #000000;
-
-      &:hover,
-      &:focus {
-        border-color: #f3c653;
-      }
+      color: #c79002;
     }
   }
+  &--black {
+    background-color: #000000;
+
+    &:hover,
+    &:focus {
+      border-color: #f3c653;
+    }
+  }
+}
 
 .booking-room-btn {
   padding: 20px;
