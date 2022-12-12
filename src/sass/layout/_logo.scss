@@ -65,3 +65,12 @@
     font-size: 40px;
   }
 }
+
+.footer__logo {
+  font-size: 40px;
+  letter-spacing: 0.3em;
+  color: $akcent-yellow;
+  @media screen and (min-width: $tablet) {
+      font-size: 64px;
+  }
+}
