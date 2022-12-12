@@ -1,27 +1,21 @@
 .hero-room-lux {
-  background-color: rgb(153, 229, 243);
-  // background-image: url("../src/images/sections/adult-lux/adult-lux-01-mobile.jpg");
+  background-color: #0e0c07;
+  background-image: linear-gradient(to right, #000000a6, #000000a6), url('../images/sections/adult-lux/adult-lux-01-mobile.jpg');
   height: 740px;
 }
-// .address {
-//   border: 1px solid #F3C653B2;
-//   width: 210px;
+
+// .wrap-address {
+//   // position: absolute;
+//   // right: 0;
+//   // top: 0;
 // }
 
-// .hero-room-lux__address {
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: calc(15 / 12);
-//   letter-spacing: 0.01em;
-//   color: #E5E5E5;
-// }
-// .social__icon {
-//   display: inline;
-// }
 .hero-room {
-  padding-top: 181px;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 450px;
   padding-bottom: 20px;
-  // position: relative;
 }
 
 .hero-room-lux__title {
@@ -37,7 +31,7 @@
 }
 
 .part-title {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .hero-room-lux__text {
@@ -54,7 +48,6 @@ text-transform: uppercase;
 .social__list__position {
   display: inline-flex;
   flex-direction: column;
-  
 }
 
 .social__item__position {
@@ -74,5 +67,4 @@ text-transform: uppercase;
 .wrap-soc {
   display: flex;
   align-items: center;
-
 }
