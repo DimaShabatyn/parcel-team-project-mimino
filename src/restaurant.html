@@ -25,10 +25,12 @@
     <!-- main -->
     <main>
         <!-- hero -->
-        <section class="hero hero--restaurant container">
-            <include src="./partials/pages/restaurant/hero-restaurant.html"></include>
-            <div class="hero__social">
-                <include src="./partials/social.html"></include>
+        <section class="hero">
+            <div class="hero__container hero__restaurant container">
+                <include src="./partials/pages/restaurant/hero-restaurant.html"></include>
+                <div class="hero__social">
+                    <include src="./partials/social.html"></include>
+                </div>
             </div>
         </section>
 
@@ -45,15 +47,15 @@
     </section>
 
     <!-- modal window -->
-  <div data-modal>
-    <include src="./partials/modal-table.html"></include>
-  </div>
-  <div data-modal>
-    <include src="./partials/modal-room.html"></include>
-  </div>
+    <div data-modal>
+        <include src="./partials/modal-table.html"></include>
+    </div>
+    <div data-modal>
+        <include src="./partials/modal-room.html"></include>
+    </div>
 
-  <!-- scripts -->
-  <script src="./js/modal.js"></script>
+    <!-- scripts -->
+    <script src="./js/modal.js"></script>
 
     <include src="../src/partials/slider/script-slider.html"></include>
     <include src="./js/slider-hero.js"></include>

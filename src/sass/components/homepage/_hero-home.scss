@@ -1,18 +1,22 @@
 .hero {
-  position: relative;
+  background-color: #0e0c07;
 
-  padding-top: 181px;
-  padding-bottom: 20px;
+  &__container {
+    position: relative;
 
-  @media screen and (min-width: 1024px) {
-    padding-top: 188px;
-    padding-bottom: 15px;
+    padding-top: 181px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+      padding-top: 188px;
+      padding-bottom: 15px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 164px;
+      padding-bottom: 64px;
+    }
+    background-color: #474747;
   }
-  @media screen and (min-width: 1280px) {
-    padding-top: 164px;
-    padding-bottom: 64px;
-  }
-  background-color: #474747;
 
   &__social {
     @media screen and (min-width: 1280px) {
@@ -20,7 +24,8 @@
     }
   }
 
-  &--main {
+  &__main {
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -75,7 +80,8 @@
     }
   }
 
-  &--restaurant {
+  &__restaurant {
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -130,7 +136,8 @@
     }
   }
 
-  &--hotel {
+  &__hotel {
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -233,7 +240,7 @@
     }
   }
 
-  .hero__wrap {
+  &__wrap {
     display: flex;
 
     @media screen and (max-width: 1023px) {
@@ -242,11 +249,10 @@
   }
 
   &__button {
-    // display: block; вопрос!!!!!!!
     margin: 0 auto 24px;
 
     & + .hero__button {
-      margin-bottom: 130px;
+      margin-bottom: 58px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -282,7 +288,7 @@
   border-radius: 2px;
 
   &__link {
-    padding: 8px;
+    padding: 7px;
     display: flex;
 
     text-decoration: none;
