@@ -1,5 +1,6 @@
 .hotel-details {
   background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
 }
 
 .hotel-details .container {
@@ -13,11 +14,8 @@
 
   @media screen and (min-width: $desktop) {
     max-width: 1280px;
-    padding: 48px 85px 40px 52px;
+    padding: 48px 52px 40px 52px;
   }
-}
-
-.hotel-details__text-wrap {
 }
 
 .hotel-details__logo {
@@ -88,12 +86,17 @@
   }
 }
 
-.hotel-details__slider {
-  width: 100%;
-  height: 200px;
-  outline: 5px solid red;
+.hotel-details__wrap {
+  display: flex;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 96px;
+  }
+}
 
-  margin-bottom: 32px;
+.hotel-details__slider {
+  @media screen and (min-width: $desktop) {
+    margin-right: 32px;
+  }
 }
 
 .hotel-details__list {
@@ -101,6 +104,10 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: auto;
+  }
 }
 
 .hotel-details__btn {
@@ -116,4 +123,51 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #f3c653;
+}
+
+// ===================
+
+.swiper {
+  width: 874px;
+  height: 270px;
+}
+
+.swiper-slide {
+  background: transparent;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hotel-details__slider-btn {
+  position: absolute;
+  display: flex;
+  gap: 33px;
+
+  right: 354px;
+  bottom: 40px;
+}
+
+.hotel-details__slider-btn .icon {
+  fill: #ffffff;
+
+  width: 32px;
+  height: 32px;
 }
