@@ -7,10 +7,11 @@
 @import './base/global';
 @import './utils/visually-hidden';
 @import './base/container';
+@import './utils/mixins';
 
 // fonts
 @import './base/fonts';
-
+@import './layout/buttons';
 // header (all)
 @import './layout/header';
 @import './layout/logo';
