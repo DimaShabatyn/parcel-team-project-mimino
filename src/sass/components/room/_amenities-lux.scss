@@ -126,9 +126,11 @@ $btnColor: #ffffff;
     line-height: 1.2;
   }
 }
+
 .hero-amenities__arrow {
+  fill: currentColor;
   width: 24px;
   height: 24px;
   margin-left: 12px;
-  fill: currentColor;
 }
+// <!-- end -->
