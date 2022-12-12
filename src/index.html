@@ -9,58 +9,68 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- link slider -->
+    <include src="../src/partials/slider/link-slider.html"></include>
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- header -->
     <section class="header">
+    <section class="header container">
+    <div class="header__wrap">
       <include src="./partials/header.html"></include>
+      <div class="header__social">
+        <include src="./partials/social.html"></include>
+      </div>
+    </div>
+  </section>
+  <!-- main -->
+  <main>
+    <!-- hero -->
+    <section class="hero hero--main container">
+      <include src="./partials/hero-home.html"></include>
+      <div class="hero__social">
+        <include src="./partials/social.html"></include>
+      </div>
     </section>
-
     <!-- main -->
     <main>
       <section class="hero">
         <include src="./partials/hero-home.html"></include>
       </section>
-  
-      <!-- restaurant-about -->
-        <include src="./partials/about-restaurant.html"></include>
-  
-      <!-- restaurant-details -->
-        <include src="./partials/details-restaurant.html"></include>
-  
-      <!-- hotel-about -->
-        <include src="./partials/about-hotel.html"></include>
-  
-      <!-- hotel-details -->
-        <include src="./partials/details-hotel.html"></include>
-  
-      <!-- contacts -->
-        <include src="./partials/contacts-home.html"></include>
+    <!-- restaurant-about -->
+    <include src="./partials/about-restaurant.html"></include>
+    <!-- restaurant-details -->
+    <include src="./partials/details-restaurant.html"></include>
+    <!-- hotel-about -->
+    <include src="./partials/about-hotel.html"></include>
+    <!-- hotel-details -->
+    <include src="./partials/details-hotel.html"></include>
+    <!-- contacts -->
+    <include src="./partials/contacts-home.html"></include>
 
-    </main>
-    <!--  footer -->
-    <section class="footer">
-      <include src="./partials/footer.html"></include>
-    </section>
+  </main>
+  <!--  footer -->
+  <section class="footer">
+    <include src="./partials/footer.html"></include>
+  </section>
+
+  <!-- modal window -->
+  <div data-modal>
+    <include src="./partials/modal-table.html"></include>
+  </div>
+  <div data-modal>
+    <include src="./partials/modal-room.html"></include>
+  </div>
+  <!-- scripts -->
+  <script src="./js/modal.js"></script>
+
+    <include src="../src/partials/slider/script-slider.html"></include>
+    <include src="./js/slider-hero.js"></include>
+    <include src="./js/slider-third.js"></include>
+    <include src="./js/slider-two.js"></include>
     
-    <!-- modal window -->
-    <div data-modal>
-      <include src="./partials/modal-table.html"></include>
-    </div>
-    <div data-modal>
-      <include src="./partials/modal-room.html"></include>
-    </div>
-
     <!-- scripts -->
     <script src="./js/modal.js"></script>
-
-    <!-- data slick -->
-    <script type="module" src="./js/slider-hero.js"></script>
-    <!-- slick jquery -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- slick js -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
