@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Готель</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- link slider -->
+    <include src="../src/partials/slider/link-slider.html"></include>
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -38,7 +37,24 @@
       <include src="./partials/footer.html"></include>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/slider-two.js"></script>
+    <!-- modal window -->
+    <div data-modal>
+      <include src="./partials/modal-table.html"></include>
+    </div>
+    <div data-modal>
+      <include src="./partials/modal-room.html"></include>
+    </div>
+  
+    <!-- scripts -->
+    <script src="./js/modal.js"></script>
+  
+      <include src="../src/partials/slider/script-slider.html"></include>
+      <include src="./js/slider-hero.js"></include>
+      <include src="./js/slider-third.js"></include>
+      <include src="./js/slider-two.js"></include>
+  
+      <!-- scripts -->
+      <script src="./js/modal.js"></script>
   </body>
+    
 </html>

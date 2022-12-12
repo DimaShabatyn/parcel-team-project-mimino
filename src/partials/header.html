@@ -1,14 +1,28 @@
-<div class="container">
-  <p class="header"> Напиши свій код Хедера</p>
-  <nav class="nav">
-    <a href="../src/index.html" class="logo">MIMIHO</a>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="../src/restaurant.html">Ресторан</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="../src/hotel.html">Готель</a>
-        </li>
-      </ul>
-  </nav>
-</div>
+<nav class="nav">
+  <a href="../src/index.html" class="logo header__logo">MIMIHO</a>
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a class="nav__link" href="../src/restaurant.html">Ресторан</a>
+      <a class="nav__tel nav__wrap" href="tel:+380955559533">
+        <svg class="nav__icon" width="24" height="24">
+          <use href="./images/sprite.svg#phone"></use>
+        </svg>
+        <span class="nav__hidden">095 555 95 33</span>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="../src/hotel.html">Готель</a>
+      <div class="nav__wrap">
+        <a class="nav__tel" href="tel:+380668491089">
+          <svg class="nav__icon" width="24" height="24">
+            <use href="./images/sprite.svg#phone"></use>
+          </svg>
+          <span class="nav__hidden">066 849 10 89</span>
+        </a>
+        <a class="nav__tel nav__hidden" href="tel:+380672758540">
+          <span>067 275 85 40</span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</nav>
