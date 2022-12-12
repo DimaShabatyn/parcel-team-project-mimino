@@ -4,9 +4,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 740px;
   @media screen and (min-width: 1024px) {
   background-image: linear-gradient(to right, #000000a6, #000000a6), url('../images/sections/adult-lux/adult-lux-01-tablet-2x.jpg');
+  position: relative;
   }
 }
 
@@ -65,6 +65,12 @@
     }
 }
 
+.address__pos {
+  @media screen and (min-width: 1280px) {
+    display: none;
+    }
+}
+
 .wrap-soc {
   @media screen and (min-width: 1024px) {
     margin-left: 40px;
@@ -82,23 +88,29 @@
 }
 
 .room-hero__button {
-  @media screen and (min-width: 1024px) {
-    margin-right: 0;
-    }
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 1024px) {
+    margin-right: 0;
+    position: absolute;
+    bottom: 64px;
+    right: 15px;
+    }
+  @media screen and (min-width: 1280px) {
+    bottom: 66px;
+    }
 }
 
 .wrap-soc {
   display: flex;
   align-items: center;
-  
+  @media screen and (min-width: 1280px) {
+    display: none;
+    }
 }
 
 .wrap-hero-room {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 1280px) {
-    display: none;
-    }
+  
 }
