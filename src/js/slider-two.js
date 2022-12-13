@@ -22,5 +22,9 @@ const swiper3 = new Swiper('.swiper', {
       spaceBetween: 40,
       width: 428,
     },
+    1280: {
+      spaceBetween: 40,
+      width: 548,
+    },
   },
 });
