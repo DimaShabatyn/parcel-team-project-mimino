@@ -14,8 +14,8 @@ const swiper3 = new Swiper('.swiper', {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      width: 404,
       spaceBetween: 16,
+      width: 404,
     },
     // when window width is >= 480px
     1024: {
