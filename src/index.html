@@ -1,87 +1,100 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIMIHO</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="manifest" href="/src/site.webmanifest">
-  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!-- link slider -->
-  <include src="../src/partials/slider/link-slider.html"></include>
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIMIHO</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="/src/site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- link slider -->
+    <include src="../src/partials/slider/link-slider.html"></include>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
   <body>
     <!-- header -->
     <section class="header">
-    <section class="header container">
-
-    <div class="header__wrap">
-      <include src="./partials/header.html"></include>
-      <div class="header__social">
-        <include src="./partials/social.html"></include>
-      </div>
-    </div>
-  </section>
-  <!-- main -->
-  <main>
-    <!-- hero -->
-    <section class="hero">
-      <div class="hero__container hero__main container">
-        <include src="./partials/hero-home.html"></include>
-        <div class="hero__social">
-          <include src="./partials/social.html"></include>
+      <section class="header container">
+        <div class="header__wrap">
+          <include src="./partials/header.html"></include>
+          <div class="header__social">
+            <include src="./partials/social.html"></include>
+          </div>
         </div>
-      </div>
+      </section>
     </section>
-    <!-- restaurant-about -->
-    <include src="./partials/about-restaurant.html"></include>
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero__container hero__main container">
+          <include src="./partials/hero-home.html"></include>
+          <div class="hero__social">
+            <include src="./partials/social.html"></include>
+          </div>
+        </div>
+      </section>
+      <!-- restaurant-about -->
+      <include src="./partials/about-restaurant.html"></include>
 
-    <!-- restaurant-details -->
-    <include src="./partials/details-restaurant.html"></include>
+      <!-- restaurant-details -->
+      <include src="./partials/details-restaurant.html"></include>
 
-    <!-- hotel-about -->
-    <include src="./partials/about-hotel.html"></include>
+      <!-- hotel-about -->
+      <include src="./partials/about-hotel.html"></include>
 
-    <!-- hotel-details -->
-    <include src="./partials/details-hotel.html"></include>
+      <!-- hotel-details -->
+      <include src="./partials/details-hotel.html"></include>
 
-    <!-- contacts -->
-    <include src="./partials/contacts-home.html"></include>
+      <!-- contacts -->
+      <include src="./partials/contacts-home.html"></include>
+    </main>
 
-  </main>
+    <!--  footer -->
+    <section class="footer">
+      <include src="./partials/footer.html"></include>
+    </section>
 
-  <!--  footer -->
-  <section class="footer">
-    <include src="./partials/footer.html"></include>
-  </section>
+    <!-- modal window -->
+    <div data-modal>
+      <include src="./partials/modal-table.html"></include>
+    </div>
+    <div data-modal>
+      <include src="./partials/modal-room.html"></include>
+    </div>
+    <div data-modal>
+      <include src="./partials/pages/modal/modal-room-lux-price.html"></include>
+    </div>
 
-  <!-- modal window -->
-  <div data-modal>
-    <include src="./partials/modal-table.html"></include>
-  </div>
-  <div data-modal>
-    <include src="./partials/modal-room.html"></include>
-  </div>
-  <div data-modal>
-    <include src="./partials/pages/modal/modal-room-lux-price.html"></include>
-</div>
+    <!-- scripts -->
+    <script src="./js/modal.js"></script>
 
-  <!-- scripts -->
-  <script src="./js/modal.js"></script>
+    <!-- scripts -->
 
-  <include src="../src/partials/slider/script-slider.html"></include>
-  <script src="./js/slider-hero.js"></script>
-  <script src="./js/slider-third.js"></script>
-  <script src="./js/slider-two.js"></script>
+    <include src="../src/partials/slider/script-slider.html"></include>
+    <script src="./js/slider-hero.js"></script>
+    <script src="./js/slider-third.js"></script>
+    <script src="./js/slider-two.js"></script>
 
-  <!-- scripts -->
-  <script src="./js/modal.js"></script>
-</body>
-
+    <!-- scripts -->
+  </body>
 </html>
