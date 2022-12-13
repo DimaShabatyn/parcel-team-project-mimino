@@ -28,6 +28,7 @@
       </div>
     </div>
   </section>
+  
   <!-- main -->
   <main>
     <!-- hero -->
@@ -36,35 +37,45 @@
         <include src="./partials/hero-home.html"></include>
       </section>
   
-      <!-- restaurant-about -->
-        <include src="./partials/about-restaurant.html"></include>
-  
-      <!-- restaurant-details -->
-        <include src="./partials/details-restaurant.html"></include>
-  
-      <!-- hotel-about -->
-        <include src="./partials/about-hotel.html"></include>
-  
-      <!-- hotel-details -->
-        <include src="./partials/details-hotel.html"></include>
-  
-      <!-- contacts -->
-        <include src="./partials/contacts-home.html"></include>
+    <!-- restaurant-about -->
+    <include src="./partials/about-restaurant.html"></include>
 
-    </main>
+    <!-- restaurant-details -->
+    <include src="./partials/details-restaurant.html"></include>
 
-    <!--  footer -->
-    <section class="footer">
-      <include src="./partials/footer.html"></include>
-    </section>
-    
-    <!-- modal window -->
-    <div data-modal>
-      <include src="./partials/modal-table.html"></include>
-    </div>
-    <div data-modal>
-      <include src="./partials/modal-room.html"></include>
-    </div>
+    <!-- hotel-about -->
+    <include src="./partials/about-hotel.html"></include>
+
+    <!-- hotel-details -->
+    <include src="./partials/details-hotel.html"></include>
+
+    <!-- contacts -->
+    <include src="./partials/contacts-home.html"></include>
+  </main>
+
+  <!--  footer -->
+  <section class="footer">
+    <include src="./partials/footer.html"></include>
+  </section>
+
+  <!-- modal window -->
+  <div data-modal>
+    <include src="./partials/modal-table.html"></include>
+  </div>
+  <div data-modal>
+    <include src="./partials/modal-room.html"></include>
+  </div>
+  <div data-modal>
+    <include src="./partials/pages/modal/modal-room-lux-price.html"></include>
+</div>
+
+  <!-- scripts -->
+  <script src="./js/modal.js"></script>
+
+  <include src="../src/partials/slider/script-slider.html"></include>
+  <script src="./js/slider-hero.js"></script>
+  <script src="./js/slider-third.js"></script>
+  <script src="./js/slider-two.js"></script>
 
   <!-- scripts -->
   <script src="./js/modal.js"></script>
