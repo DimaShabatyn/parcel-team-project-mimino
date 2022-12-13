@@ -9,6 +9,7 @@
 }
 
 .footer__container { 
+    background-image: none;
    @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
