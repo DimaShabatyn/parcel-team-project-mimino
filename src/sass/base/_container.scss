@@ -14,4 +14,19 @@
         width: 1280px;
         padding: 0 85px;
     }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: 
+        linear-gradient(to right, transparent 26.4%,
+        rgba(186, 186, 186, 0.4) 26.4% 26.48%,
+        transparent 26.48% 50.08%,
+        rgba(186, 186, 186, 0.4) 50.08% 50.16%,
+        transparent 50.16% 73.76%,
+        rgba(186, 186, 186, 0.4) 73.76% 73.84%,
+        transparent 73.84%
+    );   
+    }
 }
