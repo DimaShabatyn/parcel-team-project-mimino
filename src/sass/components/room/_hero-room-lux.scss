@@ -1,4 +1,10 @@
-.hero-room-lux {
+.hero-room {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 450px;
+  padding-bottom: 20px;
+
   background-color: #0e0c07;
   background-image: linear-gradient(to right, #000000a6, #000000a6), url('../images/sections/adult-lux/adult-lux-01-mobile-2x.jpg');
   background-position: center;
@@ -10,17 +16,13 @@
   }
 }
 
-.hero-room {
-  display: flex;
-  flex-direction: column;
+// .hero-room {
+  
 
-  padding-top: 450px;
-  padding-bottom: 20px;
-
-  // @media screen and (min-width: 1024px) {
-  //   flex-direction: row;
-  //   }
-}
+//   // @media screen and (min-width: 1024px) {
+//   //   flex-direction: row;
+//   //   }
+// }
 
 .hero-room-lux__title {
   margin-bottom: 14px;
