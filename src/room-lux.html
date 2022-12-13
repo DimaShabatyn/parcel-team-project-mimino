@@ -19,8 +19,13 @@
     </head>
     <body>
         <!-- header -->
-        <section class="header">
-            <include src="./partials/header.html"></include>
+        <section class="header container">
+            <div class="header__wrap">
+                <include src="./partials/header.html"></include>
+                <div class="header__social">
+                    <include src="./partials/social.html"></include>
+                </div>
+            </div>
         </section>
         
         <!-- main -->
@@ -50,9 +55,9 @@
   <script src="./js/modal.js"></script>
 
     <include src="../src/partials/slider/script-slider.html"></include>
-    <include src="./js/slider-hero.js"></include>
-    <include src="./js/slider-third.js"></include>
-    <include src="./js/slider-two.js"></include>
+    <script src="./js/slider-hero.js"></script>
+    <script src="./js/slider-third.js"></script>
+    <script src="./js/slider-two.js"></script>
 
     </body>
 </html>
