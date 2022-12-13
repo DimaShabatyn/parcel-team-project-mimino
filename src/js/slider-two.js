@@ -1,9 +1,9 @@
 
-const swiper = new Swiper('.swiper', {
+const swiper3 = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-    slidesPerView: 2,
-    // spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 20,
   
     // Navigation arrows
     navigation: {
