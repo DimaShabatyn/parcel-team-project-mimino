@@ -1,5 +1,5 @@
 
-const swiper4 = new Swiper('.restaurant-about__swiper', {
+const swiper4 = new Swiper('.swiper', {
   // Default parameters
   loop: true,
   freeMode: true,
@@ -8,8 +8,8 @@ const swiper4 = new Swiper('.restaurant-about__swiper', {
   slidesPerView: 2,
   // centeredSlides: true,
   navigation: {
-    nextEl: '.restaurant-about__btn-prev',
-    prevEl: '.restaurant-about__btn-nex',
+    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
   },
   // Responsive breakpoints
   breakpoints: {
