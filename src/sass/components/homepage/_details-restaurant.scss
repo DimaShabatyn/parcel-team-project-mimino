@@ -4,7 +4,7 @@
 
 .restaurant-details__container {
   width: 414px;
-  height: 735px;
+  // height: 735px;
   padding-top: 24px;
   padding-bottom: 40px;
   margin-left: auto;
@@ -29,7 +29,7 @@
   screen and (min-width: $mobile) and (min-resolution: 2dppx) {
   .restaurant-details__container {
     width: 414px;
-    height: 735px;
+    // height: 735px;
     padding-top: 24px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -80,7 +80,7 @@
       ),
       url('../images/sections/details-restaurant/details-restaurant-bg-tablet-2x.jpg');
     width: 1024px;
-    height: 620px;
+    // height: 620px;
     padding-top: 48px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -100,7 +100,7 @@
       ),
       url('../images/sections/details-restaurant/details-restaurant-bg.jpg');
     width: 1280px;
-    height: 620px;
+    // height: 620px;
     padding-top: 48px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -122,7 +122,7 @@
       ),
       url('../images/sections/details-restaurant/details-restaurant-bg-2x.jpg');
     width: 1280px;
-    height: 620px;
+    // height: 620px;
     padding-top: 48px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -299,4 +299,7 @@
 .restaurant-details__menu-open:hover,
 .restaurant-details__menu-open:focus {
   background: #ffffff;
+}
+.swiper-slide {
+  color: #fff;
 }
