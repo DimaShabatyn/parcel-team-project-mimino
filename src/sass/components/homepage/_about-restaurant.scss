@@ -117,24 +117,28 @@
 }
  // swiper style
 .swiper {
-    width: 100%;
-    height: 100%;  
+    // width: 100%;
+    // height: 100%;  
       
 }
-.swiper-wrapper{
+.restaurant-about__swiper-wrapper{
     display: flex;
-    gap: 24px;
     left: 69px;
+    gap: 25px;
     @media screen and (min-width:1024px) {
         top: 50px;
+        gap: 40px;
     }
     @media screen and (min-width:1280px) {
         
     }
 }
 .swiper-slide {
+    display: flex;
     text-align: center;
     background: #fff;
+    width: 245px;
+    
 
     /* Center slide text vertically */
     // display: -webkit-box;
@@ -152,13 +156,18 @@
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
   }
-.swiper-slide .img {
+.swiper-slide-img {
     display: block;
-    width: 100%;
+    width: auto;
     height: 100%;
-    max-width: 245px;
+    // max-width: 245px;
     object-fit: cover;
     
-    margin: 0;
-    height: auto;
+   }
+.restaurant-about__btn {
+    display: flex;
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+
 }
