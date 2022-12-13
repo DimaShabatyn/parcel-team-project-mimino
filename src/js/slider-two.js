@@ -1,4 +1,4 @@
-const swiper1 = new Swiper('.swiper', {
+const swiper3 = new Swiper('.swiper', {
   // Default parameters
   loop: true,
   freeMode: true,
