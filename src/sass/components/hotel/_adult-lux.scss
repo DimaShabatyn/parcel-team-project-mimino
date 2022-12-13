@@ -1,6 +1,6 @@
 .container-adult {
   background-color: #fffdee;
-
+  border-: ;
   @media screen and (min-width: 414px) {
     width: 414px;
     padding: 32px 15px;
@@ -97,10 +97,6 @@
   }
 }
 
-// .img-room {
-//   position: relative;
-// }
-
 .img-room {
   margin-top: 32px;
   padding-left: 155px;
@@ -113,56 +109,63 @@
   }
   @media screen and (min-width: 1280px) {
     position: absolute;
-    transform: translateY(-90%);
+    transform: translateY(-75%);
   }
 }
 
 .img-adult {
   @media screen and (min-width: 414px) {
-    // display: inline-block;
-    // width: 244px;
-    // transform: translateX();
   }
 }
 
 .slider {
-  position: absolute;
-  transform: translateX(-30%);
+  overflow: hidden;
+  // max-width: 100%;
+  max-width: 100%;
   margin-top: 32px;
-  margin-bottom: 20px;
+  margin-right: 0;
+  padding-right: 0;
+  transform: translateX(-30%);
   @media screen and (min-width: 1024px) {
+    max-width: 55%;
     margin-top: 176px;
+    transform: translateX(0);
   }
   @media screen and (min-width: 1280px) {
+    max-width: 55%;
     margin-top: 188px;
+    transform: translateX(0);
   }
 }
 
-.img-slider {
-  display: flex;
-  gap: 16px;
+.slider-wrap {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
 }
 
-.slick-slider {
-  display: flex;
-  gap: 16px;
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.slick-track {
-  display: flex;
-  gap: 16px;
-}
-
-.icon-arrow {
-  display: flex;
+.arrow {
+  display: inline-flex;
   gap: 32px;
   margin-top: 20px;
+  // margin-left: 0;
   @media screen and (min-width: 1024px) {
-    padding-left: 377px;
+    margin-top: 32px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 542px;
+    margin-top: 40px;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
 }
 
 .btn-adult {
