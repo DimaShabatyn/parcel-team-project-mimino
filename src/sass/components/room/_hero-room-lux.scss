@@ -1,8 +1,60 @@
-.hero-roo {
+.hero-room-lux {
   background-color: #0e0c07;
+  position: relative;
+}
+
+.hero-room__swiper-button-prev {
+  position: absolute;
+
+}
+
+.swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-button-next:after {
+  content: '';
+}
+
+.hero-room__swiper-button-next {
+  position: absolute;
+}
+
+.hero-room__arrow-icon {
+  fill: #F3C653;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0%, 0%, 0%, 65%);
+}
+
+.hero-room__swiper {
+  
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+// .swiper-wrapper>.hero-room__swiper-wrapper {
+//   transition-timing-function: ease-out;
+//   margin-right: 0;
+//   min-width: 0;
+// }
+
+.hero-room__swiper-slide {
+  // min-height: 740px;
+  min-width: 414px;
+  @media screen and (min-width: 1024px) {
+    min-width: 1024px;
+    }
+    @media screen and (min-width: 1280px) {
+      min-width: 1280px;
+      }
 }
 
 .hero-room {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -13,6 +65,7 @@
 
 .hero-room-lux__title {
   margin-bottom: 14px;
+  z-index: 2;
 
   font-family: 'Times New Roman';
   font-style: normal;
@@ -28,6 +81,7 @@
 }
 
 .wrap-hero-room {
+  z-index: 2;
   @media screen and (min-width: 1024px) {
     display: flex;
     align-items: center;
@@ -37,6 +91,7 @@
 .hero-room-lux__text {
   width: 325px;
   margin-bottom: 41px;
+  z-index: 2;
 
   font-weight: 700;
   font-size: 12px;
