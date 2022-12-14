@@ -1,0 +1,77 @@
+<div class="backdrop is-hidden" data-modal-room-in>
+  <div class="modal-room is-hidden">
+    <button
+      type="button"
+      class="modal-room__button-close"
+      aria-label="закрити"
+      data-modal-room-close
+    >
+      <svg class="modal-room__button-close-icon" width="18" height="18">
+        <use href="./images/sprite.svg#x"></use>
+      </svg>
+    </button>
+    <h2 class="modal-room__heading">Забронювати номер</h2>
+    <form class="modal-room__form">
+      <div class="modal-room__inputs">
+        <div class="modal-room__input-field modal-flex-element">
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="modal-room__field-input"
+            placeholder="Ваше ім’я"
+          />
+          <label for="user-name" class="modal-room__field-heading"
+            >На кого забронювати номер?</label
+          >
+        </div>
+        <div class="modal-room__input-field modal-flex-element">
+          <input
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            placeholder="+38 (___) ___-__-__"
+            class="modal-room__field-input"
+          />
+          <label for="user-tel" class="modal-room__field-heading"
+            >Номер телефону</label
+          >
+        </div>
+        <div class="modal-flex-element-gap"></div>
+        <div class="modal-room__select-option modal-flex-element">
+          <select
+            name="room-class"
+            id="room-class"
+            class="modal-room__select-room-class"
+          >
+            <option value="double-room-suite-lux" selected>
+              Двомісний люкс
+            </option>
+            <option value="triple-room">Трьохмісний</option>
+            <option value="double-room-suite">Двомісний</option>
+          </select>
+          <label for="room-class" class="modal-room__field-heading"
+            >Категорія номеру</label
+          >
+        </div>
+        <div class="modal-room__select-option date modal-flex-element">
+          <select name="data-in" id="data-in" class="date__selection">
+            <option value="today">Cьогодні</option>
+            <option value="">Оберіть дату</option>
+          </select>
+          <label for="data-in" class="date__label">Дата заїзду</label>
+        </div>
+        <div class="modal-room__select-option date modal-flex-element">
+          <select name="data-out" id="data-out" class="date__selection">
+            <option value="today">Cьогодні</option>
+            <option value="">Оберіть дату</option>
+          </select>
+          <label for="data-out" class="date__label">Дата виїзду</label>
+        </div>
+      </div>
+      <button type="submit" class="form-submit-btn modal-desk-btn">
+        оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>
