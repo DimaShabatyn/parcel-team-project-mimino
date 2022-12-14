@@ -110,10 +110,11 @@ address {
   }
 
   &:nth-child(2) .contacts-home__subtitle {
-    margin-right: 55px;
+    margin-right: 54px;
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 8px;
+      margin-right: 55px;
     }
   }
 

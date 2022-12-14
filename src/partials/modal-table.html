@@ -1,0 +1,72 @@
+<div class="backdrop is-hidden" data-modal-table-in>
+  <div class="modal-table is-hidden">
+    <button
+      type="button"
+      class="modal-table__button-close"
+      aria-label="закрити"
+      data-modal-table-close
+    >
+      <svg class="modal-table__button-close-icon" width="18" height="18">
+        <use href="./images/sprite.svg#x"></use>
+      </svg>
+    </button>
+    <h2 class="modal-table__heading">Забронювати столик</h2>
+    <form class="modal-table__form">
+      <div class="modal-table__inputs">
+        <div class="modal-table__input-field modal-flex-element">
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="modal-table__field-input"
+            placeholder="Ваше ім’я"
+          />
+          <label for="user-name" class="modal-table__field-heading"
+            >На кого забронювати столик?</label
+          >
+        </div>
+        <div class="modal-table__input-field modal-flex-element">
+          <input
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            placeholder="+38 (___) ___-__-__"
+            class="modal-table__field-input"
+          />
+          <label for="user-tel" class="modal-table__field-heading"
+            >Номер телефону</label
+          >
+        </div>
+        <div class="modal-table__select-option modal-flex-element">
+          <select
+            name="table-class"
+            id="table-class"
+            class="modal-table__select-table-class"
+          >
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <label for="table-class" class="modal-table__field-heading"
+            >Столик на яку кількість осіб?</label
+          >
+        </div>
+        <div class="modal-table__select-option date modal-flex-element">
+          <select name="data-in" id="data-in" class="date__selection">
+            <option value="today">Cьогодні</option>
+            <option value="">Оберіть дату</option>
+          </select>
+          <label for="data-in" class="date__label"
+            >На яку дату бронювати?</label
+          >
+        </div>
+      </div>
+      <button type="submit" class="form-submit-btn modal-desk-btn">
+        оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>

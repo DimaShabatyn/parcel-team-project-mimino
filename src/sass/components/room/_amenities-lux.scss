@@ -1,0 +1,138 @@
+$titleColor: #000000;
+$textColor: #7a7a7a;
+$linkColor: #c79002;
+$linkAccent: #f3c653;
+$btnColor: #ffffff;
+$bgnColor: #fffdee;
+
+.hero-amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $bgnColor;
+}
+.hero-amenities__title {
+  margin-bottom: 16px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 1.16;
+  color: $titleColor;
+}
+
+.hero-amenities__text {
+  max-width: 384px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $textColor;
+  @media screen and (min-width: $tablet) {
+    max-width: 400px;
+    width: 400px;
+  }
+}
+.hero-amenities__text.hero-amenities__text--view {
+  @media screen and (min-width: $tablet) {
+    min-width: 757px;
+    width: 757px;
+  }
+}
+.hero-amenities__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 159px;
+  }
+}
+.hero-amenities__list {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.hero-amenities__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.hero-amenities__subtitle {
+  margin-bottom: 16px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.17;
+
+  color: $titleColor;
+}
+.hero-amenities__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: $tablet) {
+    align-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+.hero-amenities__btn {
+  margin-bottom: 20px;
+  padding: 20px 42px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.2;
+
+  background-color: $titleColor;
+  color: $btnColor;
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+  transition: background-color 250ms linear;
+  transition: color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: $linkAccent;
+    color: $titleColor;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 18px 38px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.hero-amenities__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.02em;
+
+  color: $linkColor;
+  transition: color 250ms linear;
+  &:hover,
+  &:focus {
+    color: $linkAccent;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.hero-amenities__arrow {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+}
+// <!-- end -->
