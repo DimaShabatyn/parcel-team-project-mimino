@@ -219,6 +219,13 @@ address {
   }
 }
 
+.contacts-home__br {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .contacts-home__map {
   width: 100%;
   height: 220px;
