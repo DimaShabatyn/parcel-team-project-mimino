@@ -1,26 +1,36 @@
-const swiper5 = new Swiper('.swiper', {
+const swiper5 = new Swiper('.restaurant-detailes__swiper', {
   // Default parameters
   loop: true,
   freeMode: true,
-  // slidesPerView: 1,
+  spaceBetween: 20,
   initialSlide: 0,
   slidesPerView: 3,
-  // centeredSlides: true,
+  // slidePerGroup: 3,
+  // width: 881,
+  centeredSlides: true,
+  centeredSlidesBounds: false,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
+    //   // when window width is >= 320px
     320: {
-      spaceBetween: 16,
-      width: 404,
+      slidesPerView: 1.3,
+      width: 374,
+    },
+    //   // when window width is >= 480px
+    1024: {
+      slidesPerView: 2.6,
+      spaceBetween: 34,
+      width: 662,
     },
     // when window width is >= 480px
-    1024: {
-      spaceBetween: 40,
-      width: 428,
+    1280: {
+      slidesPerView: 2.6,
+      spaceBetween: 86,
+      width: 875,
     },
   },
 });

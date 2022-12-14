@@ -1,55 +1,46 @@
-.restaurant-details {
+.restaurant-detailes {
   background-color: #0e0c07;
 }
-
-.restaurant-details__container {
+.restaurant-detailes__container {
   max-width: 414px;
-  // height: 735px;
   padding-top: 24px;
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.65)
     ),
     url('../images/sections/details-restaurant/details-restaurant-bg-mobile.jpg');
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
 @media screen and (min-width: $mobile) and (min-device-pixel-ratio: 2),
   screen and (min-width: $mobile) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width: $mobile) and (min-resolution: 192dpi),
   screen and (min-width: $mobile) and (min-resolution: 2dppx) {
-  .restaurant-details__container {
+  .restaurant-detailes__container {
     min-width: 414px;
-    // height: 735px;
     padding-top: 24px;
     padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
         rgba(0, 0, 0, 0.65)
       ),
       url('../images/sections/details-restaurant/details-restaurant-bg-mobile-2x.jpg');
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 }
-
-.restaurant-details__container {
+.restaurant-detailes__container {
   @media screen and (min-width: $tablet) {
     background-image: linear-gradient(
         to right,
@@ -58,7 +49,6 @@
       ),
       url('../images/sections/details-restaurant/details-restaurant-bg-tablet.jpg');
     min-width: 1024px;
-    // height: 620px;
     padding-top: 48px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -66,13 +56,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
   }
 }
 @media screen and (min-width: $tablet) and (min-device-pixel-ratio: 2),
   screen and (min-width: $tablet) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width: $tablet) and (min-resolution: 192dpi),
   screen and (min-width: $tablet) and (min-resolution: 2dppx) {
-  .restaurant-details__container {
+  .restaurant-detailes__container {
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.76),
@@ -80,7 +71,6 @@
       ),
       url('../images/sections/details-restaurant/details-restaurant-bg-tablet-2x.jpg');
     min-width: 1024px;
-    // height: 620px;
     padding-top: 48px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -88,10 +78,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
   }
 }
-
-.restaurant-details__container {
+.restaurant-detailes__container {
   @media screen and (min-width: $desktop) {
     background-image: linear-gradient(
         to right,
@@ -100,7 +90,6 @@
       ),
       url('../images/sections/details-restaurant/details-restaurant-bg.jpg');
     min-width: 1280px;
-    // height: 620px;
     padding-top: 48px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -108,13 +97,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
   }
 }
 @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
   screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width: $desktop) and (min-resolution: 192dpi),
   screen and (min-width: $desktop) and (min-resolution: 2dppx) {
-  .restaurant-details__container {
+  .restaurant-detailes__container {
     background-image: linear-gradient(
         to right,
         gba(0, 0, 0, 0.76),
@@ -122,7 +112,6 @@
       ),
       url('../images/sections/details-restaurant/details-restaurant-bg-2x.jpg');
     min-width: 1280px;
-    // height: 620px;
     padding-top: 48px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -130,55 +119,52 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
   }
 }
-
 // ------------------------------------------
-.restaurant-details__group {
+.restaurant-detailes__group {
   padding-left: 125px;
 }
 @media screen and (min-width: $tablet) {
-  .restaurant-details__group {
+  .restaurant-detailes__group {
     padding-left: 231px;
     padding-right: 89px;
   }
 }
 @media screen and (min-width: $desktop) {
-  .restaurant-details__group {
+  .restaurant-detailes__group {
     padding-left: 253px;
     padding-right: 247px;
   }
 }
-.restaurant-details__logo {
+.restaurant-detailes__logo {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: #ffffff;
-  //   padding-top: 24px;
   margin-bottom: 12px;
 }
 @media screen and (min-width: $tablet) {
-  .restaurant-details__logo {
+  .restaurant-detailes__logo {
     font-weight: 700;
     font-size: 64px;
     line-height: 1.08;
     letter-spacing: 0.3em;
-
     color: #ffffff;
   }
 }
 @media screen and (min-width: $desktop) {
-  .restaurant-details__logo {
+  .restaurant-detailes__logo {
     font-weight: 700;
     font-size: 64px;
     line-height: 1.08;
     letter-spacing: 0.3em;
-
     color: #ffffff;
   }
 }
-.restaurant-details__title {
+.restaurant-detailes__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -187,26 +173,24 @@
   margin-bottom: 20px;
 }
 @media screen and (min-width: $tablet) {
-  .restaurant-details__title {
+  .restaurant-detailes__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-
     color: #ffffff;
   }
 }
 @media screen and (min-width: $desktop) {
-  .restaurant-details__title {
+  .restaurant-detailes__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-
     color: #ffffff;
   }
 }
-.restaurant-details__text {
+.restaurant-detailes__text {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -215,41 +199,37 @@
   margin-bottom: 48px;
 }
 @media screen and (min-width: $tablet) {
-  .restaurant-details__text {
+  .restaurant-detailes__text {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-
     color: #bababa;
   }
 }
 @media screen and (min-width: $desktop) {
-  .restaurant-details__text {
+  .restaurant-detailes__text {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-
     color: #bababa;
   }
 }
-
 // ---------------block btn--------------------
-.restaurant-details__btn {
+.restaurant-detailes__btn {
   display: flex;
   flex-direction: column;
   text-align: center;
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
   align-items: center;
-  bottom: 40px;
   text-decoration: none;
+  margin-top: 40px;
 }
-
 @media screen and (min-width: $tablet) {
-  .restaurant-details__btn {
+  .restaurant-detailes__btn {
     text-align: center;
     position: absolute;
     left: 47px;
@@ -257,47 +237,41 @@
   }
 }
 @media screen and (min-width: $desktop) {
-  .restaurant-details__btn {
+  .restaurant-detailes__btn {
     position: absolute;
     left: 85px;
     bottom: 94px;
   }
 }
-
 //------------------------btn----------------------------------------------
-.restaurant-details__modal-open {
+.restaurant-detailes__modal-open {
   display: block;
   min-width: 236px;
   height: 48px;
   padding: 14px 24px 14px 24px;
   margin-bottom: 16px;
-
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #ffffff;
   border-radius: 25px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-
   color: #f3c653;
   transition: background-color 250ms linear;
 }
-.restaurant-details__modal-open:hover,
-.restaurant-details__modal-open:focus {
+.restaurant-detailes__modal-open:hover,
+.restaurant-detailes__modal-open:focus {
   background: #ffffff;
 }
-.restaurant-details__menu-open {
+.restaurant-detailes__menu-open {
   display: block;
   min-width: 236px;
   height: 48px;
   padding: 14px 32px 14px 31px;
-
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #ffffff;
   border-radius: 25px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -305,18 +279,127 @@
   color: #f3c653;
   transition: background-color 250ms linear;
 }
-.restaurant-details__menu-open:hover,
-.restaurant-details__menu-open:focus {
+.restaurant-detailes__menu-open:hover,
+.restaurant-detailes__menu-open:focus {
   background: #ffffff;
 }
+// -------------------foto-wiper--------------
 
-// -----------------------------------------------
-.restaurant-details__swiper {
-  width: 270px;
-  height: 270px;
-  color: #fff;
+@media screen and (min-width: $mobile) {
+  .restaurant-detailes__swiper {
+    position: relative;
+    left: 25px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .restaurant-detailes__swiper {
+    position: relative;
+    left: 265px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .restaurant-detailes__swiper {
+    position: relative;
+    left: 268px;
+  }
 }
 
-// .restaurant-details__image {
-//   background-size: contain;
-// }
+@media screen and (min-width: $mobile) {
+  .swiper-container {
+    min-width: 374px;
+    max-width: 374px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .swiper-container {
+    min-width: 662px;
+    max-width: 662px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .swiper-container {
+    min-width: 875px;
+    max-width: 875px;
+  }
+}
+
+.restaurant-detailes__swiper-slide {
+  min-width: 270px;
+  max-width: 270px;
+  min-height: 270px;
+}
+.restaurant-detailes__swiper-img {
+  max-width: 270px;
+  max-height: 270px;
+}
+.restaurant-detailes__swiper-slim-img {
+  max-width: 162px;
+  min-width: 162px;
+  max-height: 270px;
+}
+.restaurant-detailes__swiper-slim-slide {
+  max-width: 162px;
+  min-width: 162px;
+  max-height: 270px;
+}
+
+// -------------------btn-wiper------------------
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+}
+
+@media screen and (max-width: $tablet) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    min-width: 30px;
+    min-height: 30px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    min-width: 30px;
+    min-height: 30px;
+  }
+}
+.swiper__icon {
+  fill: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media screen and (min-width: $mobile) {
+  .restaurant-detailes__swiper-arrows {
+    margin-top: 24px;
+    display: flex;
+    gap: 34px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .restaurant-detailes__swiper-arrows {
+    margin-top: 32px;
+    display: flex;
+    gap: 34px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .restaurant-detailes__swiper-arrows {
+    margin-top: 32px;
+    display: flex;
+    gap: 34px;
+  }
+}

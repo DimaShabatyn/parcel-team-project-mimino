@@ -1,75 +1,142 @@
-<section class="restaurant-details">
-  <div class="container restaurant-details__container">
-    <div class="restaurant-details__group">
-      <p class="logo restaurant-details__logo">MIMIHO</p>
-      <h2 class="restaurant-details__title">Ресторан</h2>
-      <p class="restaurant-details__text">
+<section class="restaurant-detailes">
+  <div class="container restaurant-detailes__container">
+    <div class="restaurant-detailes__group">
+      <p class="logo restaurant-detailes__logo">MIMIHO</p>
+      <h2 class="restaurant-detailes__title">Ресторан</h2>
+      <p class="restaurant-detailes__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit.
       </p>
     </div>
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img
-            src="./images/sliders/details-restaurant-slider/details-restaurant-slider-01.jpg"
-            alt=""
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./images/sliders/details-restaurant-slider/details-restaurant-slider-02.jpg"
-            alt=""
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./images/sliders/details-restaurant-slider/details-restaurant-slider-03.jpg"
-            alt=""
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./images/sliders/details-restaurant-slider/details-restaurant-slider-04.jpg"
-            alt=""
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./images/sliders/details-restaurant-slider/details-restaurant-slider-05.jpg"
-            alt=""
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./images/sliders/details-restaurant-slider/details-restaurant-slider-06.jpg"
-            alt=""
-          />
-        </div>
-        ...
+   <!-------swiper-js------------------------------->
+   <div class="swiper-container">
+    <!-- wiper foto -->
+    <div class="swiper restaurant-detailes__swiper">
+       
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide restaurant-detailes__swiper-slide">
+          <picture>
+            <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-01-tablet.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-01-tablet-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1024px)" type="image/jpeg">
+            <source srset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-01-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-01-mobile-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 414px)" type="image/jpeg">
+             <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-01.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-01-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1280px)" type="image/jpeg">
+            <img class="restaurant-detailes__swiper-img" srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-01-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-01-mobile-2x.jpg 2x" alt="food">
+            </picture>
+          </div>
+
+              <!-- <div class="swiper-slide .restaurant-detailes__swiper-slim-slide">
+          <picture>
+            <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-02-tablet.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-02-tablet-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1024px)" type="image/jpeg">
+            <source srset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-02-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-02-mobile-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 414px)" type="image/jpeg">
+             <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-02.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-02-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1280px)" type="image/jpeg">
+            <img class="restaurant-detailes__swiper-slim-img" srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-02-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-02-mobile-2x.jpg 2x" alt="food">
+            </picture>
+          </div> -->
+
+            <div class="swiper-slide restaurant-detailes__swiper-slide">
+          <picture>
+            <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-03-tablet.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-03-tablet-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1024px)" type="image/jpeg">
+            <source srset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-03-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-03-mobile-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 414px)" type="image/jpeg">
+             <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-03.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-03-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1280px)" type="image/jpeg">
+            <img class="restaurant-detailes__swiper-img" srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-03-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-03-mobile-2x.jpg 2x" alt="food">
+            </picture>
+          </div>
+
+            <div class="swiper-slide restaurant-detailes__swiper-slide">
+          <picture>
+            <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-04-tablet.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-04-tablet-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1024px)" type="image/jpeg">
+            <source srset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-04-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-04-mobile-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 414px)" type="image/jpeg">
+             <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-04.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-04-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1280px)" type="image/jpeg">
+            <img class="restaurant-detailes__swiper-img" srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-04-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-04-mobile-2x.jpg 2x" alt="food">
+            </picture>
+          </div>
+
+            <!-- <div class="swiper-slide .restaurant-detailes__swiper-slim-slide">
+          <picture>
+            <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-05-tablet.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-05-tablet-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1024px)" type="image/jpeg">
+            <source srset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-05-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-05-mobile-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 414px)" type="image/jpeg">
+             <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-05.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-05-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1280px)" type="image/jpeg">
+            <img class="restaurant-detailes__swiper-slim-img" srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-05-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-05-mobile-2x.jpg 2x" alt="food">
+            </picture>
+          </div> -->
+
+             <div class="swiper-slide restaurant-detailes__swiper-slide">
+          <picture>
+            <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-06-tablet.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-06-tablet-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1024px)" type="image/jpeg">
+            <source srset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-06-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-06-mobile-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 414px)" type="image/jpeg">
+             <source srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-06.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-06-2x.jpg 2x" sizes="(width: 270px)"
+            media="( min-width: 1280px)" type="image/jpeg">
+            <img class="restaurant-detailes__swiper-img" srcset="/src/images/sliders/details-restaurant-slider/details-restaurant-slider-06-mobile.jpg 1x, 
+            /src/images/sliders/details-restaurant-slider/details-restaurant-slider-06-mobile-2x.jpg 2x" alt="food">
+            </picture>
+          </div>
+
       </div>
-      <!-- If we need pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-    <div class="restaurant-details__btn">
+      <!--------------- Button js -------------->
+      <div class="swiper-arrows restaurant-detailes__swiper-arrows">
+          <div class="swiper-button-prev">
+                <svg class="swiper__icon">
+                  <use href="./images/sprite.svg#arrow-left"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="swiper__icon">
+                  <use href="./images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+      </div>
+   </div>
+        <!------------ buttun --------------->
+    <div class="restaurant-detailes__btn">
       <button
         type="button"
-        class="restaurant-details__modal-open"
+        class="restaurant-detailes__modal-open"
         data-modalrest-open
       >
         Забронювати столик
       </button>
-      <a class="restaurant-details__menu-open" href="#">Переглянути меню</a>
+      <a class="restaurant-detailes__menu-open" href="#">Переглянути меню</a>
     </div>
   </div>
 </section>
