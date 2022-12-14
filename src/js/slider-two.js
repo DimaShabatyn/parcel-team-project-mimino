@@ -1,14 +1,21 @@
-const swiper3 = new Swiper('.swiper', {
-    // Default parameters
-    loop: true,
-    freeMode: true,
-    // slidesPerView: 1,
-    initialSlide: 0,
-    slidesPerView: 2,
-    // centeredSlides: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+const swiper3 = new Swiper('.adult-third__swiper', {
+  // Default parameters
+  loop: true,
+  freeMode: true,
+  // slidesPerView: 1,
+  initialSlide: 0,
+  slidesPerView: 2,
+  // centeredSlides: true,
+  navigation: {
+    nextEl: '.adult-third__swiper-button-next',
+    prevEl: '.adult-third__swiper-button-prev',
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      spaceBetween: 16,
+      width: 404,
     },
     // Responsive breakpoints
     breakpoints: {
