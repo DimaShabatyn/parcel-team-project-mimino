@@ -5,7 +5,12 @@
 
 .hero-room__swiper-button-prev {
   position: absolute;
+  // z-index: 3;
+}
 
+.hero-room__swiper-button-next {
+  position: absolute;
+  // z-index: 3;
 }
 
 .swiper-button-prev:after {
@@ -14,10 +19,6 @@
 
 .swiper-button-next:after {
   content: '';
-}
-
-.hero-room__swiper-button-next {
-  position: absolute;
 }
 
 .hero-room__arrow-icon {

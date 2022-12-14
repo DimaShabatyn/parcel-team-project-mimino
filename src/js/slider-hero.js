@@ -3,8 +3,8 @@ const swiper7 = new Swiper('.swiper', {
   loop: true,
   freeMode: false,
   // slidesPerView: 1,
-  initialSlide: 0,
-  slidesPerView: 0,
+  initialSlide: 1.5,
+  slidesPerView: 1,
   // centeredSlides: true,
   navigation: {
     nextEl: '.hero-room__swiper-button-next',
@@ -18,9 +18,9 @@ const swiper7 = new Swiper('.swiper', {
       width: 414,
     },
     // when window width is >= 480px
-    1024: {
+    1280: {
       spaceBetween: 0,
-      width: 1024,
+      width: 1280,
     },
   },
 });
