@@ -1,15 +1,15 @@
-const swiper3 = new Swiper('.swiper', {
-    // Default parameters
-    loop: true,
-    freeMode: true,
-    // slidesPerView: 1,
-    initialSlide: 0,
-    slidesPerView: 2,
-    // centeredSlides: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+const swiper3 = new Swiper('.adult-third__swiper', {
+  // Default parameters
+  loop: true,
+  freeMode: true,
+  // slidesPerView: 1,
+  initialSlide: 0,
+  slidesPerView: 2,
+  // centeredSlides: true,
+  navigation: {
+    nextEl: '.adult-third__swiper-button-next',
+    prevEl: '.adult-third__swiper-button-prev',
+  },
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
@@ -28,7 +28,7 @@ const swiper3 = new Swiper('.swiper', {
       },
     },
   });
-
+  // restaurant__swiper
   const swiper4 = new Swiper('.swiper', {
     // Default parameters
     loop: true,
@@ -63,5 +63,4 @@ const swiper3 = new Swiper('.swiper', {
       slidesPerView: 2,
     },
   },
-  });
-
+});
