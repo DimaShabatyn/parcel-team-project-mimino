@@ -63,5 +63,4 @@ const swiper3 = new Swiper('.adult-third__swiper', {
       slidesPerView: 2,
     },
   },
-  });
-
+});
