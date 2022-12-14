@@ -9,6 +9,7 @@
 }
 
 .footer__container { 
+    max-width: 414px;
     background-image: none;
    @media screen and (min-width: $tablet) {
     display: flex;
@@ -23,6 +24,10 @@
     margin-bottom: 32px;
 }
 
+.logo__span-footer {
+    letter-spacing: 0;
+}
+
 .footer__logo:hover, 
 .footer__logo:focus {
     color: rgba(243, 198, 83, 0.7);
@@ -30,6 +35,11 @@
 
 .footer__list {
     margin-left: 85px;
+
+    @media screen and (max-width: 413px) {
+            margin-left: 25px;
+        }
+
     @media screen and (min-width: $tablet) {
         margin-left: 163px;
     }
@@ -60,18 +70,20 @@
 
 .footer-socials { 
     display: flex;
-    margin-left: 257px;
+    margin-left: 246px;
     gap: 20px;
     
 
-    @media screen and (min-width: $tablet) {
-        gap: 12px;
+    @media screen and (max-width: 413px) {
+        justify-content: flex-end;
+        margin-right: 0;
     }
     
 
     @media screen and (min-width: $tablet) {
         flex-direction: column-reverse;
         margin-left: 129px;
+        gap: 12px;
     }
 
     @media screen and (min-width: $desktop) {
