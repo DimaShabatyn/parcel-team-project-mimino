@@ -28,7 +28,7 @@ const swiper3 = new Swiper('.swiper', {
       },
     },
   });
-
+  // restaurant__swiper
   const swiper4 = new Swiper('.swiper', {
     // Default parameters
     loop: true,

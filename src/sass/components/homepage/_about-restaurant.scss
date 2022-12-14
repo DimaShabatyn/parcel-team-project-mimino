@@ -221,7 +221,8 @@
 // }
 // .swiper-button-prev {
 // }
-.swiper-container [class^='swiper-button-']::after {
+// .swiper-container
+.restaurant__swiper-container [class^='swiper-button-']::after {
     content: '';
 }
 .restaurant__swiper-icon {
