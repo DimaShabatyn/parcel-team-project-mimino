@@ -1,5 +1,5 @@
- <script>
-      var swiper = new Swiper(".mySwiper", {
+
+      var swiper2 = new Swiper(".mySwiper", {
      loop: true,
   // slidesPerView: 3,
   //         spaceBetween: 20,
@@ -25,4 +25,3 @@
             },
         },
       });
-    </script>
