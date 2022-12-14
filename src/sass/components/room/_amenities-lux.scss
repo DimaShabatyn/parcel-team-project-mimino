@@ -3,10 +3,12 @@ $textColor: #7a7a7a;
 $linkColor: #c79002;
 $linkAccent: #f3c653;
 $btnColor: #ffffff;
+$bgnColor: #fffdee;
 
 .hero-amenities {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $bgnColor;
 }
 .hero-amenities__title {
   margin-bottom: 16px;
