@@ -1,15 +1,42 @@
 .hero-room-lux {
   background-color: #0e0c07;
+  // position: relative;
+  height: 740px;
+  @media screen and (min-width: 1024px) {
+    height: 720px;
+    }
+}
+
+.hero-room {
   position: relative;
 }
 
+.hero-room__bg {
+  background-color: #0e0c0783;
+  z-index: 2;
+  width: 100%;
+  height: 143px;
+  position: absolute;
+  background: linear-gradient(to bottom, black, rgba(255, 255, 255, 0));
+  @media screen and (min-width: 1024px) {
+    height: 116px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 147px;
+  }
+}
+
+// -----------------------------Slides
+
 .hero-room__swiper-button-prev {
   position: absolute;
+  left: 83px;
   // z-index: 3;
 }
 
 .hero-room__swiper-button-next {
   position: absolute;
+  right: 83px;
   // z-index: 3;
 }
 
@@ -22,7 +49,7 @@
 }
 
 .hero-room__arrow-icon {
-  fill: #F3C653;
+  fill: #f3c653;
   height: 100%;
   width: 100%;
   display: block;
@@ -30,29 +57,51 @@
 }
 
 .hero-room__swiper {
-  
-  height: 100%;
+  height: 740px;
   width: 100%;
   top: 0;
   right: 0;
+  // max-width: 284px;
+  // padding: 60px 0;
+  position: absolute;
+  @media screen and (min-width: 1023px) {
+    height: 720px;
+  }
+  // overflow: visible;
+  // width: 404px;
+  // height: 120%;
+  // position: relative;
+  // position: absolute;
+
+  // height: 300px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
-// .swiper-wrapper>.hero-room__swiper-wrapper {
-//   transition-timing-function: ease-out;
-//   margin-right: 0;
-//   min-width: 0;
-// }
+.hero-room__swiper-wrapper {
+  // height: 448px;
+  // display: flex;
+  // align-items: center;
+  width: 284px;
+  @media screen and (min-width: $tablet) {
+    width: 428px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 548px;
+  }
+}
 
 .hero-room__swiper-slide {
   // min-height: 740px;
   min-width: 414px;
   @media screen and (min-width: 1024px) {
     min-width: 1024px;
-    }
-    @media screen and (min-width: 1280px) {
-      min-width: 1280px;
-      }
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+  }
 }
+
+// ------------------------------ container
 
 .hero-room {
   position: relative;
@@ -61,10 +110,19 @@
 
   padding-top: 450px;
   padding-bottom: 20px;
-
+  @media screen and (min-width: 1024px) {
+    padding-top: 493px;
+    padding-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 566px;
+    padding-bottom: 48px;
+  }
 }
 
+// ------------------------------- title
 .hero-room-lux__title {
+  display: inline;
   margin-bottom: 14px;
   z-index: 2;
 
@@ -78,17 +136,11 @@
 }
 
 .part-title {
+  display: inline;
   text-transform: uppercase;
 }
 
-.wrap-hero-room {
-  z-index: 2;
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    align-items: center;
-    }
-}
-
+// -------------------------------- text
 .hero-room-lux__text {
   width: 325px;
   margin-bottom: 41px;
@@ -99,63 +151,66 @@
   line-height: 15px;
   letter-spacing: 0.02em;
   color: #ffffff;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+  }
 }
 
+// ---------------------------------
+.wrap-hero-room {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  // @media screen and (min-width: 1024px) {
+  //   display: flex;
+  //   align-items: center;
+  //   }
+}
+
+// ---------------------------------- social
 .social__list__position {
   display: inline-flex;
   flex-direction: column;
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: row;
-    }
-}
-
-.address__pos {
-  @media screen and (min-width: 1280px) {
-    display: none;
-    }
+  }
 }
 
 .wrap-soc {
+  display: flex;
+  align-items: center;
   @media screen and (min-width: 1024px) {
     margin-left: 40px;
-  
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 
 .social__item__position:not(:last-child) {
-  
   @media screen and (max-width: 1023px) {
     margin-right: 0;
     margin-bottom: 9px;
     margin-top: 0;
-    }
+  }
 }
 
+// ---------------------------------- address
+.address__pos {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+// ---------------------------------- button
 .room-hero__button {
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 1024px) {
     margin-right: 0;
     position: absolute;
-    bottom: 64px;
-    right: 15px;
-    }
-  @media screen and (min-width: 1280px) {
-    bottom: 66px;
-    }
-}
-
-.wrap-soc {
-  display: flex;
-  align-items: center;
-  @media screen and (min-width: 1280px) {
-    display: none;
-    }
-}
-
-.wrap-hero-room {
-  display: flex;
-  align-items: center;
-  
+    bottom: 50px;
+    right: 83px;
+  }
 }

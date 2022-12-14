@@ -15,12 +15,12 @@ const swiper7 = new Swiper('.swiper', {
     // when window width is >= 320px
     320: {
       spaceBetween: 0,
-      width: 414,
+      width: 0,
     },
     // when window width is >= 480px
     1280: {
       spaceBetween: 0,
-      width: 1280,
+      width: 0,
     },
   },
 });
