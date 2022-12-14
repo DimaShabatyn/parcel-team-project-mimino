@@ -16,12 +16,17 @@ const swiper4 = new Swiper('.swiper', {
     // when window width is >= 320px
     320: {
       spaceBetween: 25,
-      width: 330,
+      width: 533,
     },
     // when window width is >= 480px
     1024: {
       spaceBetween: 40,
-      width: 548,
-    },
+      width: 428,
+       },
+   // when window width is >= 480px
+   1280: {
+    spaceBetween: 40,
+    width: 548,
   },
+},
 });
