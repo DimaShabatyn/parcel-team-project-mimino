@@ -8,7 +8,7 @@
         
     }
     @media screen and (min-width:1280px) {
-        padding-bottom: 137px;
+        padding-bottom: 118px;
     }
 }
 .restaurant-about__container {
@@ -121,26 +121,28 @@
 // .swiper-container
 .restaurant__swiper-container {
     position: relative;
-    height: 245px;
+    height: auto;
+    width: 330px;
     @media screen and (min-width: $mobile) {
-      width: auto;
+      
       left: 69px;
     }
     @media screen and (min-width: $tablet) {
       width: 428px;
       position: absolute;
       bottom: 0px;
-      bottom: -217px;
+      bottom: -166px;
       left: 536px;
     }
     @media screen and (min-width: $desktop) {
       width: 548px;
       left: 647px;
-      bottom: -130px;
+      bottom: -135px;
     }
 }​
 // .swiper
 .restaurant__swiper {
+  
     position: absolute;
     @media screen and (max-width: 1023px) {
       right: -15px;
@@ -149,6 +151,7 @@
 }
 // .swiper-wrapper
 .restaurant__wrap {
+  width: 330px;
    @media screen and (min-width: $tablet) {
       width: 428px;
     }
@@ -161,9 +164,6 @@
 .restaurant__slide {   
     height: 245px;
     background-color: #dadada;
-
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
     @media screen and (max-width: $mobile) {
       min-width: 245px;
       height: 245px;
@@ -176,6 +176,10 @@
       max-width: 254px;
     height: 254px;
     }
+}
+.restaurant__slide-shadow{
+  // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 .adult-third__buttons {
     display: flex;
@@ -200,7 +204,7 @@
     gap: 33px;
     bottom: -52px;
     @media screen and (min-width: $tablet) {
-      bottom: -13px;     
+      bottom: -68px;     
     }
     @media screen and (min-width: $desktop) {
       bottom: -76px;  
@@ -213,10 +217,10 @@
     height: 32px;
     
 }
-.swiper-button-next {
-}
-.swiper-button-prev {
-}
+// .swiper-button-next {
+// }
+// .swiper-button-prev {
+// }
 .swiper-container [class^='swiper-button-']::after {
     content: '';
 }
