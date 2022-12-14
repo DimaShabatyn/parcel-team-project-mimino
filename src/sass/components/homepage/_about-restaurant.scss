@@ -117,7 +117,7 @@
         height: auto;
     }
 }
-//////// swiper///////////
+
 // .swiper-container
 .restaurant__swiper-container {
     position: relative;
@@ -199,15 +199,17 @@
 }
 .restaurant__swiper-arrows {
     position: absolute;
-    right: 0;
+    right: 15px;
     display: flex;
     gap: 33px;
     bottom: -52px;
     @media screen and (min-width: $tablet) {
-      bottom: -68px;     
+      bottom: -68px;   
+      right: 0px;  
     }
     @media screen and (min-width: $desktop) {
       bottom: -76px;  
+      
     }
 }
   .swiper-button-prev,
@@ -221,7 +223,9 @@
 // }
 // .swiper-button-prev {
 // }
-.swiper-container [class^='swiper-button-']::after {
+// .swiper-container
+.restaurant__swiper-container
+ [class^='swiper-button-']::after {
     content: '';
 }
 .restaurant__swiper-icon {
