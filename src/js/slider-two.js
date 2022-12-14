@@ -1,4 +1,34 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const swiper4 = new Swiper('.swiper', {
   // Default parameters
   loop: true,
