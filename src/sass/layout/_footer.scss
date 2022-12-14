@@ -18,7 +18,7 @@
 
 .footer__nav {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     margin-bottom: 32px;
 }
@@ -60,33 +60,22 @@
 
 .footer-socials { 
     display: flex;
-    flex-direction: row-reverse;
     margin-left: 257px;
     gap: 20px;
     
 
     @media screen and (min-width: $tablet) {
-        display: block;
+        gap: 12px;
+    }
+    
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: column-reverse;
         margin-left: 129px;
     }
 
     @media screen and (min-width: $desktop) {
         margin-left: 199px;
-    }
-}
-
-.footer-socials__item {
-    flex-basis: calc((100% - 40px) / 3);
-    margin: 0;
-    padding: 0;
-}
-
-.footer-socials__item:not(:last-child) {
-    // margin-left: 20px;
-
-    @media screen and (min-width: $tablet) {
-    margin-left: 0;
-    margin-bottom: 12px;
     }
 }
 
