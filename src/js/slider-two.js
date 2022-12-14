@@ -10,13 +10,6 @@ const swiper3 = new Swiper('.adult-third__swiper', {
     nextEl: '.adult-third__swiper-button-next',
     prevEl: '.adult-third__swiper-button-prev',
   },
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      spaceBetween: 16,
-      width: 404,
-    },
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
@@ -34,7 +27,7 @@ const swiper3 = new Swiper('.adult-third__swiper', {
         width: 548,
       },
     },
-  }});
+  });
   // restaurant__swiper
   const swiper4 = new Swiper('.swiper', {
     // Default parameters
