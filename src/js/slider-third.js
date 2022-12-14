@@ -10,8 +10,8 @@ const swiper5 = new Swiper('.restaurant-detailes__swiper', {
   centeredSlides: true,
   centeredSlidesBounds: false,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.restaurant-detailes__swiper-button-next',
+    prevEl: '.restaurant-detailes__swiper-button-prev',
   },
   // Responsive breakpoints
   breakpoints: {

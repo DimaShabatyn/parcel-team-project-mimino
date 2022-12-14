@@ -234,6 +234,7 @@
     position: absolute;
     left: 47px;
     bottom: 96px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: $desktop) {
@@ -283,7 +284,8 @@
 .restaurant-detailes__menu-open:focus {
   background: #ffffff;
 }
-// -------------------foto-wiper--------------
+
+// ----------slide-----------------
 
 @media screen and (min-width: $mobile) {
   .restaurant-detailes__swiper {
@@ -303,26 +305,26 @@
     left: 268px;
   }
 }
-
+// --------------swiper-contaner--------
 @media screen and (min-width: $mobile) {
-  .swiper-container {
+  .restaurant-detailes__swiper-container {
     min-width: 374px;
     max-width: 374px;
   }
 }
 @media screen and (min-width: $tablet) {
-  .swiper-container {
+  .restaurant-detailes__swiper-container {
     min-width: 662px;
     max-width: 662px;
   }
 }
 @media screen and (min-width: $desktop) {
-  .swiper-container {
+  .restaurant-detailes__swiper-container {
     min-width: 875px;
     max-width: 875px;
   }
 }
-
+// -------------------foto-wiper--------------
 .restaurant-detailes__swiper-slide {
   min-width: 270px;
   max-width: 270px;
@@ -344,35 +346,35 @@
 }
 
 // -------------------btn-wiper------------------
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.restaurant-detailes__swiper-button-next::after,
+.restaurant-detailes__swiper-button-prev::after {
   content: '';
 }
 
 @media screen and (max-width: $tablet) {
-  .swiper-button-prev,
-  .swiper-button-next {
+  .restaurant-detailes__swiper-button-prev,
+  .restaurant-detailes__swiper-button-next {
     position: static;
-    min-width: 30px;
-    min-height: 30px;
+    width: 30px;
+    height: 30px;
     display: flex;
     margin-top: 20px;
   }
 }
 @media screen and (min-width: $tablet) {
-  .swiper-button-prev,
-  .swiper-button-next {
+  .restaurant-detailes__swiper-button-prev,
+  .restaurant-detailes__swiper-button-next {
     position: static;
-    min-width: 30px;
-    min-height: 30px;
+    width: 30px;
+    height: 30px;
   }
 }
 @media screen and (min-width: $desktop) {
-  .swiper-button-prev,
-  .swiper-button-next {
+  .restaurant-detailes__swiper-button-prev,
+  .restaurant-detailes__swiper-button-next {
     position: static;
-    min-width: 30px;
-    min-height: 30px;
+    width: 30px;
+    height: 30px;
   }
 }
 .swiper__icon {
