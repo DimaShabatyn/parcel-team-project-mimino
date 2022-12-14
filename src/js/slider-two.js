@@ -1,4 +1,4 @@
-const swiper3 = new Swiper('.swiper', {
+const swiper3 = new Swiper('.adult-third__swiper', {
   // Default parameters
   loop: true,
   freeMode: true,
@@ -7,8 +7,8 @@ const swiper3 = new Swiper('.swiper', {
   slidesPerView: 2,
   // centeredSlides: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.adult-third__swiper-button-next',
+    prevEl: '.adult-third__swiper-button-prev',
   },
   // Responsive breakpoints
   breakpoints: {
