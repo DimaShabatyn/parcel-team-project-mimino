@@ -1,14 +1,22 @@
 .hero-room-lux {
   background-color: #0e0c07;
-  // position: relative;
-  height: 740px;
-  @media screen and (min-width: 1024px) {
-    height: 720px;
-    }
 }
 
-.hero-room {
+.hero-room-lux__con {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 451px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 465px;
+    padding-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 538px;
+    padding-bottom: 48px;
+  }
 }
 
 .hero-room__bg {
@@ -30,13 +38,27 @@
 
 .hero-room__swiper-button-prev {
   position: absolute;
-  left: 83px;
-  // z-index: 3;
+  left: 13px;
+  // z-index: 999;
+  @media screen and (min-width: 1023px) {
+    left: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 83px;
+  }
+  
 }
 
 .hero-room__swiper-button-next {
   position: absolute;
-  right: 83px;
+  right: 13px;
+  @media screen and (min-width: 1023px) {
+    right: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 83px;
+  }
+  
   // z-index: 3;
 }
 
@@ -64,7 +86,7 @@
   // max-width: 284px;
   // padding: 60px 0;
   position: absolute;
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1024px) {
     height: 720px;
   }
   // overflow: visible;
@@ -78,15 +100,14 @@
 }
 
 .hero-room__swiper-wrapper {
-  // height: 448px;
-  // display: flex;
-  // align-items: center;
-  width: 284px;
+  position: absolute;
+  right: 781px;
+  width: 414px;
   @media screen and (min-width: $tablet) {
-    width: 428px;
+    width: 1024px;
   }
   @media screen and (min-width: $desktop) {
-    width: 548px;
+    width: 1280px;
   }
 }
 
@@ -94,10 +115,10 @@
   // min-height: 740px;
   min-width: 414px;
   @media screen and (min-width: 1024px) {
-    min-width: 1024px;
+    min-width: 1064px;
   }
   @media screen and (min-width: 1280px) {
-    min-width: 1280px;
+    min-width: 1331px;
   }
 }
 
@@ -124,7 +145,7 @@
 .hero-room-lux__title {
   display: inline;
   margin-bottom: 14px;
-  z-index: 2;
+  z-index: 1;
 
   font-family: 'Times New Roman';
   font-style: normal;
@@ -133,6 +154,10 @@
   line-height: calc(32 / 28);
   letter-spacing: 0.05em;
   color: #ffffff;
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+  }
 }
 
 .part-title {
@@ -144,15 +169,21 @@
 .hero-room-lux__text {
   width: 325px;
   margin-bottom: 41px;
-  z-index: 2;
+  z-index: 1;
 
   font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
+  line-height: calc(15 / 12);
   letter-spacing: 0.02em;
   color: #ffffff;
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    width: 400px;
+  }
   @media screen and (min-width: 1280px) {
     margin-bottom: 0;
+    
   }
 }
 
@@ -205,12 +236,16 @@
 
 // ---------------------------------- button
 .room-hero__button {
+  
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 1024px) {
     margin-right: 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 66px;
+    right: 47px;
+  }
+  @media screen and (min-width: 1280px) {
     right: 83px;
   }
 }
