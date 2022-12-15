@@ -33,7 +33,8 @@ function showBackDrop(e) {
     return;
   }
   if (e.target.nodeName === 'BUTTON') {
-    console.log(e.target.textContent);
+    const comper = e.target.dataset.price === 'L';
+    console.log(comper);
     console.log('GOOOD');
   }
 
@@ -49,6 +50,9 @@ function showBackDrop(e) {
     refs.backdropRm.classList.remove('is-hidden');
     refs.modalRoom.classList.remove('is-hidden');
     return;
+  }
+  if (e.target.dataset.price === 'L') {
+    console.log('URA');
   }
 }
 
@@ -91,5 +95,3 @@ function closeBackDropPrcL(e) {
 //   refs.modalPrcL.classList.remove('is-hidden');
 //   return;
 // }
-
-console.log(refsPrice.backdropPrcL);
