@@ -1,13 +1,16 @@
 .adult-third {
   background-color: #f0ecd6;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  @media screen and (min-width: $tablet) {
-    padding-top: 66px;
-    padding-bottom: 104px;
-  }
   text-align: right;
   position: relative;
+
+  .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 66px;
+      padding-bottom: 104px;
+    }
+  }
 }
 
 .adult-third__subtitle {
@@ -258,38 +261,39 @@
   }
 }
 
-.adult-third__link-more {
-  background-color: #000;
-}
-
-.adult-third__button {
-  background-color: #000;
-}
-
 .adult-third__swiper-arrows {
+  height: auto;
   position: absolute;
   right: 0;
+  bottom: -40px;
   @media screen and (min-width: $tablet) {
     left: 0;
+    bottom: -64px;
   }
   display: flex;
   gap: 33px;
-  bottom: -44px;
+
   @media screen and (min-width: $desktop) {
-    bottom: -65px;
+    bottom: -80px;
   }
 }
 
 .adult-third__button-prev,
 .adult-third__button-next {
   position: static;
+  margin-top: 0;
   width: 32px;
   height: 32px;
   .adult-third__swiper__icon {
     color: #000;
-    width: 100%;
-    height: 100%;
+    min-width: 32px;
+    height: 32px;
     display: block;
+
+    @media screen and (min-width: $desktop) {
+      min-width: 32px;
+      height: 32px;
+    }
   }
 }
 
