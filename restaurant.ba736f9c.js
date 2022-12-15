@@ -1,2 +1,0 @@
-var swiper5=new Swiper(".restaurant-detailes__swiper",{loop:!0,freeMode:!0,spaceBetween:20,initialSlide:0,slidesPerView:3,centeredSlides:!0,centeredSlidesBounds:!1,navigation:{nextEl:".restaurant-detailes__swiper-button-next",prevEl:".restaurant-detailes__swiper-button-prev"},breakpoints:{320:{slidesPerView:1.3,width:374},1024:{slidesPerView:2.6,spaceBetween:34,width:662},1280:{slidesPerView:2.6,spaceBetween:86,width:875}}});
-//# sourceMappingURL=restaurant.ba736f9c.js.map
