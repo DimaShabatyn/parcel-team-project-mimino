@@ -1,7 +1,10 @@
 const swiper10 = new Swiper('.slider', {
   autoHeight: true,
+  freeMode: true,
   slidesPerView: 2,
   spaceBetween: 16,
+  initialSlide: 0,
+  // slidesWidth: 194,
   loop: true,
   slideClass: 'slide',
   wrapperClass: 'slider-wrap',
@@ -10,13 +13,17 @@ const swiper10 = new Swiper('.slider', {
     prevEl: '.arrow-prev',
   },
   breakpoints: {
+    320: {
+      spaceBetween: 16,
+      width: 404,
+    },
     1024: {
-      slidesPerView: 2,
       spaceBetween: 40,
+      width: 428,
     },
     1280: {
-      slidesPerView: 2,
       spaceBetween: 40,
+      width: 548,
     },
   },
 });
