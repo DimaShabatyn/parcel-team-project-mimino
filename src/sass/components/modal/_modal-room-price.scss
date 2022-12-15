@@ -5,16 +5,24 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear, visibility 250ms linear;
+  z-index: 20;
 }
 
 .modal-price {
   position: relative;
+  top: 50%;
+  transform: translatey(-50%);
   width: 414px;
   height: 572px;
   padding: 60px 15px;
   background-color: #fffdee;
   border-radius: 2px;
   margin: 0 auto;
+  @media screen and (min-width: $tablet) {
+    max-width: 712px;
+    padding: 60px 60px;
+    border: 1px solid #f3c653;
+  }
 }
 
 .modal-price__button-close {

@@ -21,8 +21,8 @@ const refsPrice = {
 };
 
 console.log(refsPrice.backdropPrcL);
-console.log(refsPrice.closeBtnPrcL);
 console.log(refsPrice.modalPrcL);
+console.log(refsPrice.closeBtnPrcL);
 
 refs.body.addEventListener('click', showBackDrop);
 
@@ -33,26 +33,23 @@ function showBackDrop(e) {
     return;
   }
   if (e.target.nodeName === 'BUTTON') {
-    const comper = e.target.dataset.price === 'L';
-    console.log(comper);
+    console.log(e.target.dataset);
     console.log('GOOOD');
   }
 
-  if (e.target.textContent === 'Забронювати столик') {
+  if (e.target.dataset.modalOpen === 'Table') {
     refs.backdropTable.classList.remove('is-hidden');
     refs.modalTable.classList.remove('is-hidden');
     return;
   }
-  if (
-    e.target.textContent === 'Забронювати номер' ||
-    e.target.textContent === 'Оформити бронювання'
-  ) {
+  if (e.target.dataset.modalOpen === 'Room') {
     refs.backdropRm.classList.remove('is-hidden');
     refs.modalRoom.classList.remove('is-hidden');
     return;
   }
-  if (e.target.dataset.price === 'L') {
-    console.log('URA');
+  if (e.target.dataset.modalOpen === 'Room-lux') {
+    refsPrice.backdropPrcL.classList.remove('is-hidden');
+    refsPrice.modalPrcL.classList.remove('is-hidden');
   }
 }
 
@@ -62,10 +59,8 @@ if (refs.closeBtnTbl) {
 if (refs.closeBtnRm) {
   refs.closeBtnRm.addEventListener('click', closeBackDropRm);
 }
-
-function closeBackDropRm(e) {
-  refs.backdropRm.classList.add('is-hidden');
-  refs.modalRoom.classList.add('is-hidden');
+if (refsPrice.closeBtnPrcL) {
+  refsPrice.closeBtnPrcL.addEventListener('click', closeBackDropPrcL);
 }
 
 function closeBackDropTable(e) {
@@ -73,6 +68,10 @@ function closeBackDropTable(e) {
   refs.modalTable.classList.add('is-hidden');
 }
 
+function closeBackDropRm(e) {
+  refs.backdropRm.classList.add('is-hidden');
+  refs.modalRoom.classList.add('is-hidden');
+}
 function closeBackDropPrcL(e) {
   refsPrice.backdropPrcL.classList.add('is-hidden');
   refsPrice.modalPrcL.classList.add('is-hidden');

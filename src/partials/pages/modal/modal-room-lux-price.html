@@ -1,5 +1,5 @@
 <div class="backdrop lux is-hidden" data-modal-price-in-l>
-  <div class="modal-price" data-modal-price-l>
+  <div class="modal-price is-hidden" data-modal-price-l>
     <button
       type="button"
       class="modal-price__button-close"
@@ -55,7 +55,9 @@
           value="1000"
         />
         <label for="day-price-lux" class="modal-room__field-heading">грн</label>
-        <button type="submit" class="form-submit-btn">ЗАБРОНЮВАТИ НОМЕР</button>
+        <button type="submit" class="form-submit-btn" data-modal-open="Room">
+          ЗАБРОНЮВАТИ НОМЕР
+        </button>
       </div>
     </form>
   </div>
