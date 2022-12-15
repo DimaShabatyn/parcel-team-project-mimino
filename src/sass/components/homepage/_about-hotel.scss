@@ -1,6 +1,9 @@
 .hotel-about {
     background: #FFFDEE;
-    .container{
+    
+}
+.hotel-about__container {
+    position: relative;
     padding-top: 16px;
     padding-bottom: 72px;
     @media screen and (min-width:1024px) {
@@ -10,9 +13,6 @@
     @media screen and (min-width:1280px) {
         padding-bottom: 118px;
     }
-}}
-.hotel-about__container {
-    position: relative;
 }
 .hotel-about__title {
     font-family: 'Times New Roman';
@@ -109,9 +109,10 @@
 .hotel-about__wrap{
     position: absolute;
     top: 194px;
+    // top: 144px;
     left: 15px;
     @media screen and (min-width:1024px) {
-        top: -144px;
+        top: -24px;
         left: 112px;
     }
 }
@@ -124,12 +125,11 @@
     @media screen and (min-width: $tablet) {
       width: 428px;
       position: absolute;
-      bottom: 0px;
-      bottom: -166px;
+      bottom: 96px;
     }
     @media screen and (min-width: $desktop) {
       width: 548px;
-      bottom: -150px;
+      bottom: 119px;
     }
 }
 // swiper
