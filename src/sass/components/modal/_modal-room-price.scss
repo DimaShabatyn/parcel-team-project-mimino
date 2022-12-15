@@ -67,17 +67,17 @@
   }
 }
 
-.modal-room__inputs {
+.modal-price__inputs {
   width: 100%;
+  margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin-bottom: 40px;
   }
 }
 
-.modal-flex-element {
+.modal-flex-element-price {
   flex-basis: 100%;
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 16px) / 2);

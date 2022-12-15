@@ -71,18 +71,27 @@
 
 .modal-table__inputs {
   width: 100%;
+  margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
     width: calc(712px - 120px);
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
   }
 }
 
 .modal-flex-element {
   width: 100%;
+  margin-bottom: 28px;
+  margin-right: 16px;
+  &:nth-child(2n) {
+    margin-right: 0px;
+  }
+
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 16px) / 2);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -120,7 +129,6 @@
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #c79002;
-  margin-bottom: 20px;
   margin-left: 12px;
 }
 
@@ -178,7 +186,6 @@
     line-height: 20px;
     letter-spacing: 0.02em;
     color: #c79002;
-    margin-bottom: 20px;
     margin-left: 12px;
   }
 }

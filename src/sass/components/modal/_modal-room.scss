@@ -13,7 +13,6 @@
   top: 50%;
   transform: translatey(-50%);
   max-width: 414px;
-  // height: 780px;
   padding: 60px 15px;
   background-color: #fffdee;
   border-radius: 2px;
@@ -71,6 +70,7 @@
 
 .modal-room__inputs {
   width: 100%;
+  margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
     width: calc(712px - 120px);
     display: flex;
@@ -79,7 +79,7 @@
   }
 }
 
-.modal-flex-element {
+.modal-flex-element-room {
   flex-basis: 100%;
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 16px) / 2);
@@ -91,7 +91,7 @@
   width: calc((100% - 16px) / 2);
 }
 
-.modal-price__field-input {
+.modal-room__field-input {
   display: block;
   width: 100%;
   font-family: 'Times New Roman';
@@ -182,7 +182,6 @@
     line-height: 20px;
     letter-spacing: 0.02em;
     color: #c79002;
-    margin-bottom: 20px;
     margin-left: 12px;
   }
 }

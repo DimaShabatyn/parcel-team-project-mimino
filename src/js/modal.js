@@ -10,14 +10,14 @@ const refs = {
 
 const refsPrice = {
   backdropPrcL: document.querySelector('[data-modal-price-in-l]'),
-  // backdropPrcD: document.querySelector('[data-modal-price-in-d]'),
-  // backdropPrcT: document.querySelector('[data-modal-price-in-t]'),
+  backdropPrcT: document.querySelector('[data-modal-price-in-t]'),
+  backdropPrcD: document.querySelector('[data-modal-price-in-d]'),
   modalPrcL: document.querySelector('[data-modal-price-l]'),
-  // modalPrcD: document.querySelector('[data-modal-price-d]'),
-  // modalPrcT: document.querySelector('[data-modal-price-t]'),
+  modalPrcT: document.querySelector('[data-modal-price-t]'),
+  modalPrcD: document.querySelector('[data-modal-price-d]'),
   closeBtnPrcL: document.querySelector('[data-modal-price-close-l]'),
-  // closeBtnPrcD: document.querySelector('[data-modal-price-close-d]'),
-  // closeBtnPrcT: document.querySelector('[data-modal-price-close-t]'),
+  closeBtnPrcT: document.querySelector('[data-modal-price-close-t]'),
+  closeBtnPrcD: document.querySelector('[data-modal-price-close-d]'),
 };
 
 console.log(refsPrice.backdropPrcL);
@@ -51,6 +51,14 @@ function showBackDrop(e) {
     refsPrice.backdropPrcL.classList.remove('is-hidden');
     refsPrice.modalPrcL.classList.remove('is-hidden');
   }
+  if (e.target.dataset.modalOpen === 'Room-triple') {
+    refsPrice.backdropPrcT.classList.remove('is-hidden');
+    refsPrice.modalPrcT.classList.remove('is-hidden');
+  }
+  if (e.target.dataset.modalOpen === 'Room-double') {
+    refsPrice.backdropPrcD.classList.remove('is-hidden');
+    refsPrice.modalPrcD.classList.remove('is-hidden');
+  }
 }
 
 if (refs.closeBtnTbl) {
@@ -61,6 +69,12 @@ if (refs.closeBtnRm) {
 }
 if (refsPrice.closeBtnPrcL) {
   refsPrice.closeBtnPrcL.addEventListener('click', closeBackDropPrcL);
+}
+if (refsPrice.closeBtnPrcT) {
+  refsPrice.closeBtnPrcT.addEventListener('click', closeBackDropPrcT);
+}
+if (refsPrice.closeBtnPrcD) {
+  refsPrice.closeBtnPrcD.addEventListener('click', closeBackDropPrcD);
 }
 
 function closeBackDropTable(e) {
@@ -76,21 +90,11 @@ function closeBackDropPrcL(e) {
   refsPrice.backdropPrcL.classList.add('is-hidden');
   refsPrice.modalPrcL.classList.add('is-hidden');
 }
-
-// if (refs.closeBtnPrcL) {
-//   refs.closeBtnPrcL.addEventListener('click', closeBackDropPrcL);
-// }
-
-// console.log(
-//   e.target.className === 'adult-third__button button' &&
-//     e.target.textContent === 'Переглянути ціни'
-// );
-
-// if (
-//   e.target.className === 'adult-third__button button' &&
-//   e.target.textContent === 'Переглянути ціни'
-// ) {
-//   refs.backdropPrcL.classList.remove('is-hidden');
-//   refs.modalPrcL.classList.remove('is-hidden');
-//   return;
-// }
+function closeBackDropPrcT(e) {
+  refsPrice.backdropPrcT.classList.add('is-hidden');
+  refsPrice.modalPrcT.classList.add('is-hidden');
+}
+function closeBackDropPrcD(e) {
+  refsPrice.backdropPrcD.classList.add('is-hidden');
+  refsPrice.modalPrcD.classList.add('is-hidden');
+}
