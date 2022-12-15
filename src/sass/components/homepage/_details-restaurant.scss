@@ -328,7 +328,7 @@
 .restaurant-detailes__swiper-slide {
   min-width: 270px;
   max-width: 270px;
-  min-height: 270px;
+  height: 270px;
 }
 .restaurant-detailes__swiper-img {
   max-width: 270px;
@@ -337,12 +337,12 @@
 .restaurant-detailes__swiper-slim-img {
   max-width: 162px;
   min-width: 162px;
-  max-height: 270px;
+  height: 270px;
 }
 .restaurant-detailes__swiper-slim-slide {
   max-width: 162px;
   min-width: 162px;
-  max-height: 270px;
+  height: 270px;
 }
 
 // -------------------btn-wiper------------------
@@ -355,8 +355,8 @@
   .restaurant-detailes__swiper-button-prev,
   .restaurant-detailes__swiper-button-next {
     position: static;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     display: flex;
     margin-top: 20px;
   }
@@ -365,16 +365,16 @@
   .restaurant-detailes__swiper-button-prev,
   .restaurant-detailes__swiper-button-next {
     position: static;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
   }
 }
 @media screen and (min-width: $desktop) {
   .restaurant-detailes__swiper-button-prev,
   .restaurant-detailes__swiper-button-next {
     position: static;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
   }
 }
 .swiper__icon {
