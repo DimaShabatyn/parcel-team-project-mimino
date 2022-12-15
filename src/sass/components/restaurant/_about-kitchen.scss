@@ -1,0 +1,96 @@
+.restaurant-about__items-kitchen{
+  margin-bottom: 32px;
+  @media screen and (min-width:1024px) {
+      margin-bottom: 166px;  
+  }
+  @media screen and (min-width:1280px) {
+      margin-bottom: 103px;
+  }
+}
+// swiper-container
+.kitchen__swiper-container {
+  position: relative;
+  height: auto;
+  width: 330px;
+  @media screen and (min-width: $mobile) {
+    
+    left: 69px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 428px;
+    position: absolute;
+    bottom: 0px;
+    bottom: -166px;
+    left: 536px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 530px;
+    left: 647px;
+    bottom: -105px;
+  }
+}
+// swiper
+.kitchen__swiper {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: 1023px) {
+    right: -15px;
+  }
+}
+// swiper-wrapper
+.kitchen__wrap {
+width: 330px;
+ @media screen and (min-width: $tablet) {
+    width: 428px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 530px;
+  }
+}
+// swiper-slide
+.kitchen__slide {   
+  height: 245px;
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  @media screen and (max-width: $mobile) {
+    min-width: 245px;
+    height: 245px;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 194px;
+    height: 194px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 245px;
+  height: 245px;
+  }
+}
+.kitchen__swiper-arrows {
+  position: absolute;
+  right: 15px;
+  display: flex;
+  gap: 33px;
+  bottom: -52px;
+  @media screen and (min-width: $tablet) {
+    bottom: -68px;   
+    right: 0px;  
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: -76px;  
+  }
+}
+.kitchen__swiper-button-prev,
+.kitchen__swiper-button-next {
+  position: static;
+  width: 32px;
+  height: 32px;
+ }
+.kitchen__swiper-icon {
+  color: #000;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.kitchen__swiper-container [class^='swiper-button-']::after {
+content: '';
+}
