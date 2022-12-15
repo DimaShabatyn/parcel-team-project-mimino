@@ -19,7 +19,7 @@
 }
 
 .box-adult {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     display: flex;
     position: relative;
   }
@@ -32,11 +32,11 @@
   color: #b4b4b4;
   font-size: 20px;
   line-height: 1.15;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     font-size: 32px;
     line-height: 37px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     font-size: 32px;
     line-height: 1.16;
   }
@@ -47,12 +47,12 @@
   line-height: 1.07;
   margin-top: 8px;
   color: #494848;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     font-size: 64px;
     line-height: 1.08;
     margin-top: 4px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     font-size: 64px;
     line-height: 1.08;
     margin-top: 4px;
@@ -68,12 +68,12 @@
   line-height: 1.16;
   margin-top: 32px;
   color: #000000;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     font-size: 30px;
     line-height: 1.13;
     margin-top: 62px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     font-size: 36px;
     line-height: 1.14;
     margin-top: 72px;
@@ -90,14 +90,14 @@
   line-height: 1.25;
   margin-top: 12px;
   color: #5f5f5f;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     width: 425px;
     font-size: 16px;
     line-height: 1.25;
     margin-top: 16px;
     margin-bottom: 176px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     width: 400px;
     font-weight: 700;
     font-size: 16px;
@@ -111,13 +111,13 @@
   margin-top: 32px;
   width: 244px;
   transform: translateX(57%);
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     position: absolute;
     width: 400px;
     transform: translateY(-24%);
     right: 65px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     position: absolute;
     width: 460px;
     transform: translateY(-24%);
@@ -126,13 +126,13 @@
 }
 
 .img-adult {
-  @media screen and (min-width: 414px) {
-    max-width: 246px;
-  }
+  // @media screen and (min-width: 414px) {
+  //   max-width: 246px;
+  // }
 }
 
 .box-slider {
-  @media screen and (max-width: 1024) {
+  @media screen and (max-width: 1023) {
     display: inline-flex;
   }
 }
@@ -143,12 +143,12 @@
   max-width: 100%;
   margin-top: 32px;
   transform: translateX(-33%);
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     max-width: 46%;
     margin: 0;
     transform: translateX(0);
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     max-width: 50%;
     height: 254px;
     margin: 0;
@@ -165,7 +165,7 @@
 }
 
 .slider-img {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     width: 254px;
     height: 254px;
   }
@@ -175,13 +175,13 @@
   display: inline-flex;
   gap: 32px;
   margin-top: 20px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     margin-top: 32px;
-    padding-left: 330px;
+    transform: translateX(330px);
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     margin-top: 40px;
-    padding-left: 41%;
+    transform: translateX(460px);
   }
 }
 
@@ -191,14 +191,14 @@
   gap: 16px;
   margin-top: 20px;
   padding-left: 95px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1023px) {
     position: absolute;
     right: 45px;
     bottom: 150px;
     margin: 0;
     padding: 0;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     right: 85px;
     bottom: 185px;
   }
@@ -214,16 +214,19 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-align: center;
-
   color: #f3c653;
   box-sizing: border-box;
-
   width: 236px;
   height: 48px;
-
   background: #000000;
   border: 2px solid #ffffff;
   border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    border-color: #f3c653;
+  }
 }
 
 .price-btn {
@@ -236,14 +239,17 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-
   color: #f3c653;
   box-sizing: border-box;
-
   width: 236px;
   height: 48px;
-
   background: #000000;
   border: 2px solid #ffffff;
   border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    border-color: #f3c653;
+  }
 }
