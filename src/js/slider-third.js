@@ -20,7 +20,7 @@ const swiper5 = new Swiper('.restaurant-detailes__swiper', {
       slidesPerView: 1.3,
       width: 375,
     },
-    // when window width is >= 480px
+      // when window width is >= 480px
     1024: {
       slidesPerView: 2.6,
       spaceBetween: 34,
@@ -70,3 +70,8 @@ const swiper12 = new Swiper('.hotel-details__swiper', {
     },
   },
 });
+
+
+
+
+
