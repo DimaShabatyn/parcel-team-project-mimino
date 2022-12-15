@@ -7,8 +7,8 @@ const swiper3 = new Swiper('.adult-third__swiper', {
   slidesPerView: 2,
   // centeredSlides: true,
   navigation: {
-    nextEl: '.adult-third__swiper-button-next',
-    prevEl: '.adult-third__swiper-button-prev',
+    nextEl: '.adult-third__button-next',
+    prevEl: '.adult-third__button-prev',
   },
   // Responsive breakpoints
   breakpoints: {
