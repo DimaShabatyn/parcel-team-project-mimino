@@ -83,36 +83,26 @@
   width: 100%;
   top: 0;
   right: 0;
-  // max-width: 284px;
-  // padding: 60px 0;
   position: absolute;
   @media screen and (min-width: 1024px) {
     height: 720px;
   }
-  // overflow: visible;
-  // width: 404px;
-  // height: 120%;
-  // position: relative;
-  // position: absolute;
-
-  // height: 300px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .hero-room__swiper-wrapper {
   position: absolute;
-  right: 781px;
-  width: 414px;
+  right: 366px;
+  width: 48px;
   @media screen and (min-width: $tablet) {
-    width: 1024px;
+    width: 779px;
   }
   @media screen and (min-width: $desktop) {
-    width: 1280px;
+    width: 1091px;
   }
 }
 
 .hero-room__swiper-slide {
-  // min-height: 740px;
   min-width: 414px;
   @media screen and (min-width: 1024px) {
     min-width: 1064px;
