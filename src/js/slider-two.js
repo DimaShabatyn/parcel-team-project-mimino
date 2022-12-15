@@ -7,8 +7,8 @@ const swiper3 = new Swiper('.adult-third__swiper', {
   slidesPerView: 2,
   // centeredSlides: true,
   navigation: {
-    nextEl: '.adult-third__swiper-button-next',
-    prevEl: '.adult-third__swiper-button-prev',
+    nextEl: '.adult-third__button-next',
+    prevEl: '.adult-third__button-prev',
   },
     // Responsive breakpoints
     breakpoints: {
@@ -29,7 +29,7 @@ const swiper3 = new Swiper('.adult-third__swiper', {
     },
   });
   // restaurant__swiper
-  const swiper4 = new Swiper('.swiper', {
+  const swiper4 = new Swiper('.restaurant__swiper', {
     // Default parameters
     loop: true,
     freeMode: true,
@@ -38,8 +38,8 @@ const swiper3 = new Swiper('.adult-third__swiper', {
     // slidesPerView: 2,
     // centeredSlides: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.restaurant__button-next',
+      prevEl: '.restaurant__button-prev',
     },
     // Responsive breakpoints
     breakpoints: {
@@ -63,4 +63,40 @@ const swiper3 = new Swiper('.adult-third__swiper', {
       slidesPerView: 2,
     },
   },
+});
+// kitchen
+const swiper11 = new Swiper('.kitchen__swiper', {
+  // Default parameters
+  loop: true,
+  freeMode: true,
+  // slidesPerView: 1,
+  initialSlide: 0,
+  // slidesPerView: 2,
+  // centeredSlides: true,
+  navigation: {
+    nextEl: '.kitchen__button-next',
+    prevEl: '.kitchen__button-prev',
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      spaceBetween: 25,
+      slidesPerView: 1.315,
+      // width: 533,
+      width: 330,
+    },
+    // when window width is >= 480px
+    1024: {
+      spaceBetween: 40,
+      slidesPerView: 2,
+      width: 428,
+       },
+   // when window width is >= 480px
+   1280: {
+    spaceBetween: 40,
+    width: 530,
+    slidesPerView: 2,
+  },
+},
 });
