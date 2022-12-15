@@ -145,14 +145,14 @@
   }
 
   &::after {
-    content: ' ';
-    position: absolute;
-    top: 15px;
-    right: 20px;
+    content: '';
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url('../images/svg/arrow-down.svg');
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-image: url('../images/svg/arrow-down_v2.svg');
     background-position: center;
     background-size: cover;
   }
