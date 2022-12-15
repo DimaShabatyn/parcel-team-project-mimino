@@ -74,7 +74,7 @@
     padding-right: 16px;
   }
   @media screen and (min-width: $desktop) {
-    height: 476px;
+    height: 510px;
     padding-right: 62px;
   }
 }
@@ -122,51 +122,19 @@
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 32px;
-    // background-image: url(../images/sections/adult-third/adult-third-01-mobile.jpg);
-    // @media (min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background-image: url(../images/sections/adult-third/adult-third-01-mobile-2x.jpg);
-    // }
-  }
-
-  // background-size: cover;
-  // background-repeat: no-repeat;
-
-  @media screen and(min-width: $mobile) {
-    // background-image: url(../images/sections/adult-third/adult-third-01-mobile.jpg);
-    // @media (min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background-image: url(../images/sections/adult-third/adult-third-01-mobile-2x.jpg);
-    // }
   }
 
   @media screen and (min-width: $tablet) {
     width: 400px;
-    // height: 524px;
     position: absolute;
     left: 64px;
     right: auto;
     top: -96px;
-    // background-image: url(../images/sections/adult-third/adult-third-01-tablet.jpg);
-    // @media (min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background-image: url(../images/sections/adult-third/adult-third-01-tablet-2x.jpg);
-    // }
   }
 
   @media screen and (min-width: $desktop) {
     width: 460px;
-    // height: 574px;
     left: 95px;
-    // background-image: url(../images/sections/adult-third/adult-third-01.jpg);
-    // @media (min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background-image: url(../images/sections/adult-third/adult-third-01-2x.jpg);
-    // }
   }
 
   border-radius: 2px;
@@ -188,9 +156,7 @@
   position: relative;
 
   height: 194px;
-  // max-width: 284px;
   @media screen and (min-width: $mobile) {
-    // width: 284px;
     width: auto;
   }
   @media screen and (min-width: $tablet) {
@@ -203,26 +169,14 @@
 }
 
 .adult-third__swiper {
-  // max-width: 284px;
-  // padding: 60px 0;
   position: absolute;
   @media screen and (max-width: 1023px) {
     right: -15px;
   }
-  // overflow: visible;
-  // width: 404px;
-  // height: 120%;
-  // position: relative;
-  // position: absolute;
-
-  // height: 300px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .adult-third__swiper-wrapper {
-  // height: 448px;
-  // display: flex;
-  // align-items: center;
   width: 284px;
   @media screen and (min-width: $tablet) {
     width: 428px;
@@ -231,12 +185,9 @@
     width: 548px;
   }
 
-  // padding: 32px 0 60px 0;
-  // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .adult-third__swiper-slide {
-  // min-width: 194px;
   max-width: 194px;
   height: 194px;
   @media screen and (min-width: $desktop) {
@@ -257,7 +208,6 @@
   text-align: center;
   @media screen and (max-width: 1023px) {
     margin-top: 72px;
-    // margin-top: 220px;
   }
 }
 
