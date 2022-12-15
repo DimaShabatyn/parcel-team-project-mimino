@@ -46,7 +46,7 @@
         margin-bottom: 166px;  
     }
     @media screen and (min-width:1280px) {
-        margin-bottom: 137px;
+        margin-bottom: 107px;
     }
 }
 .restaurant-about__card:last-child {
@@ -117,9 +117,9 @@
         height: auto;
     }
 }
-
 // .swiper-container
 .restaurant__swiper-container {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     position: relative;
     height: auto;
     width: 330px;
@@ -137,12 +137,13 @@
     @media screen and (min-width: $desktop) {
       width: 548px;
       left: 647px;
-      bottom: -135px;
+      bottom: -105px;
     }
 }​
 // .swiper
 .restaurant__swiper {
-  
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+ 
     position: absolute;
     @media screen and (max-width: 1023px) {
       right: -15px;
@@ -157,13 +158,14 @@
     }
     @media screen and (min-width: $desktop) {
       width: 548px;
-    }
-    
+    }  
 }
 // .swiper-slide
 .restaurant__slide {   
     height: 245px;
     background-color: #dadada;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
     @media screen and (max-width: $mobile) {
       min-width: 245px;
       height: 245px;
@@ -176,26 +178,6 @@
       max-width: 254px;
     height: 254px;
     }
-}
-.restaurant__slide-shadow{
-  // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-}
-.adult-third__buttons {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    @media screen and (max-width: 1023px) {
-      margin-top: 72px;
-    }
-}
-.adult-third__link-more {
-    background-color: #000;
-}
-.adult-third__button {
-    background-color: #000;
 }
 .restaurant__swiper-arrows {
     position: absolute;
@@ -219,11 +201,6 @@
     height: 32px;
     
 }
-// .swiper-button-next {
-// }
-// .swiper-button-prev {
-// }
-// .swiper-container
 .restaurant__swiper-container
  [class^='swiper-button-']::after {
     content: '';

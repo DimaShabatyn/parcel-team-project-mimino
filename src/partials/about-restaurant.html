@@ -1,13 +1,13 @@
 <section class="restaurant-about">
-    <div class="restaurant-about__container container">
-        <h1 class="visually-hidden">About our restaurant</h1>
+    <div class="restaurant-about__container container lines">
+      <h2 class="visually-hidden">About our restaurant</h2>
         <p class="restaurant-about__tille">Amet minim mollit non</p>
         <p class="restaurant-about__logo logo">MIMIHO</p>
         <ul class="restaurant-about__items">
             <li class="restaurant-about__card">
                 <p class="restaurant-about__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.   
                 </p>
-                <div class="restaurant-about__wrap">
+                <div class="restaurant-about__wrap animate__animated animate__bounceInRight wow">
                     <picture class="restaurant-about__img ">
                         <!-- desktop -->
                         <source
@@ -40,9 +40,8 @@
                         />
                     </picture>
                 </div>
-                
             </li>
-            <li class="restaurant-about__card">
+            <li class="restaurant-about__card animate__animated animate__bounceInLeft wow">
                     <picture class="restaurant-about__img">
                         <!-- desktop -->
                         <source
@@ -78,7 +77,7 @@
                     </p>
             </li>
         </ul>
-        <div class="swiper-container restaurant__swiper-container">
+        <div class="swiper-container restaurant__swiper-container animate__animated animate__backInRight wow" data-wow-delay="1s">
             <div class="swiper restaurant__swiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper restaurant__wrap">
@@ -277,12 +276,12 @@
               <!-- <div class="swiper-layer"></div> -->
             </div>
             <div class="restaurant__swiper-arrows">
-              <div class="swiper-button-prev restaurant__btn-prev ">
+              <div class="swiper-button-prev restaurant__button-prev">
                 <svg class="restaurant__swiper-icon">
                   <use href="./images/sprite.svg#arrow-left"></use>
                 </svg>
               </div>
-              <div class="swiper-button-next restaurant__btn-next">
+              <div class="swiper-button-next restaurant__button-next">
                 <svg class="restaurant__swiper-icon">
                   <use href="./images/sprite.svg#arrow-right"></use>
                 </svg>
