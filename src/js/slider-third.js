@@ -15,12 +15,12 @@ const swiper5 = new Swiper('.restaurant-detailes__swiper', {
   },
   // Responsive breakpoints
   breakpoints: {
-    //   // when window width is >= 320px
+    // when window width is >= 320px
     320: {
       slidesPerView: 1.3,
       width: 375,
     },
-    //   // when window width is >= 480px
+    // when window width is >= 480px
     1024: {
       slidesPerView: 2.6,
       spaceBetween: 34,
@@ -51,12 +51,12 @@ const swiper12 = new Swiper('.hotel-details__swiper', {
   },
   // Responsive breakpoints
   breakpoints: {
-    //   // when window width is >= 320px
+    // when window width is >= 320px
     320: {
       slidesPerView: 1.3,
       width: 374,
     },
-    //   // when window width is >= 480px
+    // when window width is >= 480px
     1024: {
       slidesPerView: 2.6,
       spaceBetween: 34,
