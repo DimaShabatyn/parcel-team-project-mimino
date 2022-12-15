@@ -158,3 +158,39 @@ const swiper13 = new Swiper('.slider', {
     },
   },
 });
+// hotel
+const swiper15 = new Swiper('.hotel__swiper', {
+  // Default parameters
+  loop: true,
+  freeMode: true,
+  // slidesPerView: 1,
+  initialSlide: 0,
+  // slidesPerView: 2,
+  // centeredSlides: true,
+  navigation: {
+    nextEl: '.hotel__button-next',
+    prevEl: '.hotel__button-prev',
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      spaceBetween: 25,
+      slidesPerView: 1.315,
+      // width: 533,
+      width: 330,
+    },
+    // when window width is >= 480px
+    1024: {
+      spaceBetween: 40,
+      slidesPerView: 2,
+      width: 428,
+       },
+   // when window width is >= 480px
+   1280: {
+    spaceBetween: 40,
+    width: 530,
+    slidesPerView: 2,
+  },
+},
+});
