@@ -32,7 +32,12 @@
             id="user-tel"
             placeholder="+38 (___) ___-__-__"
             class="modal-table__field-input"
+            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+            required
+            minlength="13"
+            maxlength="13"
           />
+
           <label for="user-tel" class="modal-table__field-heading"
             >Номер телефону</label
           >
