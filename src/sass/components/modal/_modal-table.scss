@@ -27,6 +27,7 @@
 }
 
 .modal-table__button-close {
+  cursor: pointer;
   position: absolute;
   top: 16px;
   right: 16px;
@@ -71,18 +72,27 @@
 
 .modal-table__inputs {
   width: 100%;
+  margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
     width: calc(712px - 120px);
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
   }
 }
 
 .modal-flex-element {
   width: 100%;
+  margin-bottom: 28px;
+  margin-right: 16px;
+  &:nth-child(2n) {
+    margin-right: 0px;
+  }
+
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 16px) / 2);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -120,7 +130,6 @@
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #c79002;
-  margin-bottom: 20px;
   margin-left: 12px;
 }
 
@@ -137,14 +146,14 @@
   }
 
   &::after {
-    content: ' ';
-    position: absolute;
-    top: 15px;
-    right: 20px;
+    content: '';
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url('../images/svg/arrow-down.svg');
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-image: url('../images/svg/arrow-down_v2.svg');
     background-position: center;
     background-size: cover;
   }
@@ -178,7 +187,6 @@
     line-height: 20px;
     letter-spacing: 0.02em;
     color: #c79002;
-    margin-bottom: 20px;
     margin-left: 12px;
   }
 }
@@ -187,4 +195,10 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
 }

@@ -1,10 +1,10 @@
-<div class="backdrop lux is-hidden">
-  <div class="modal-price">
+<div class="backdrop lux is-hidden" data-modal-price-in-l>
+  <div class="modal-price is-hidden" data-modal-price-l>
     <button
       type="button"
       class="modal-price__button-close"
       aria-label="закрити"
-      data-modal-price-close
+      data-modal-price-close-l
     >
       <svg class="modal-price__button-close-icon" width="18" height="18">
         <use href="./images/sprite.svg#x"></use>
@@ -16,47 +16,57 @@
       <p class="modal-price__room-class-signature">Категорія номеру</p>
     </div>
     <form class="modal-price__form">
-      <div class="modal-price__select-option select">
-        <select
-          name="day-quantity-lux"
-          id="day-quantity-lux-slct"
-          class="modal-room__select-day-qnt"
-        >
-          <option value="1" selected>1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-        </select>
-        <label for="day-quantity-lux-slct" class="modal-price__field-heading"
-          >Кількість ночей</label
-        >
+      <div class="modal-price__inputs">
+        <div class="modal-price__select-option modal-flex-element-price select">
+          <select
+            name="day-quantity-lux"
+            id="day-quantity-lux-slct"
+            class="modal-room__select-day-qnt"
+          >
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <label for="day-quantity-lux-slct" class="modal-price__field-heading"
+            >Кількість ночей</label
+          >
+        </div>
+        <div class="modal-room__input-field modal-flex-element-price text">
+          <input
+            type="text"
+            name="day-quantity-lux"
+            id="day-quantity-lux"
+            class="modal-price__field-input"
+            placeholder="1"
+          />
+          <label for="day-quantity-lux" class="modal-price__field-heading"
+            >Кількість ночей</label
+          >
+        </div>
+        <div class="modal-room__input-field modal-flex-element-price">
+          <input
+            type="text"
+            name="day-price-lux"
+            id="day-price-lux"
+            class="modal-price__field-input"
+            value="1000"
+            disabled
+          />
+          <label for="day-price-lux" class="modal-price__field-heading"
+            >грн</label
+          >
+        </div>
       </div>
-      <div class="modal-room__input-field text">
-        <input
-          type="text"
-          name="day-quantity-lux"
-          id="day-quantity-lux"
-          class="modal-room__field-input"
-          placeholder="1"
-        />
-        <label for="day-quantity-lux" class="modal-room__field-heading"
-          >Кількість ночей</label
-        >
-      </div>
-
-      <div class="modal-room__input-field">
-        <input
-          type="text"
-          name="day-price-lux"
-          id="day-price-lux"
-          class="modal-room__field-input"
-          value="1000"
-        />
-        <label for="day-price-lux" class="modal-room__field-heading">грн</label>
-        <button type="submit" class="form-submit-btn">ЗАБРОНЮВАТИ НОМЕР</button>
-      </div>
+      <button
+        type="submit"
+        class="form-submit-btn modal-desk-btn"
+        data-modal-open="Room"
+      >
+        Забронювати номер
+      </button>
     </form>
   </div>
 </div>

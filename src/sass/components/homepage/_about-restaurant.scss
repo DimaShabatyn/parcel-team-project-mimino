@@ -1,5 +1,8 @@
 .restaurant-about {
     background: #FFFDEE;
+}
+.restaurant-about__container {
+    position: relative;
     padding-top: 16px;
     padding-bottom: 72px;
     @media screen and (min-width:1024px) {
@@ -10,10 +13,6 @@
     @media screen and (min-width:1280px) {
         padding-bottom: 118px;
     }
-}
-.restaurant-about__container {
-    position: relative;
-  
 }
 .restaurant-about__title {
     font-family: 'Times New Roman';
@@ -106,7 +105,7 @@
     top: 194px;
     right: 15px;
     @media screen and (min-width:1024px) {
-        top: -153px;
+        top: -32px;
         right: 112px;
     }
 }
@@ -131,13 +130,13 @@
       width: 428px;
       position: absolute;
       bottom: 0px;
-      bottom: -166px;
+      bottom: 96px;
       left: 536px;
     }
     @media screen and (min-width: $desktop) {
       width: 548px;
-      left: 647px;
-      bottom: -105px;
+      left: 643px;
+      bottom: 119px;
     }
 }​
 // .swiper
