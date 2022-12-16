@@ -32,6 +32,10 @@
             id="user-tel-room"
             placeholder="+38 (___) ___-__-__"
             class="modal-room__field-input"
+            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+            required
+            minlength="13"
+            maxlength="13"
           />
           <label for="user-tel-room" class="modal-room__field-heading"
             >Номер телефону</label

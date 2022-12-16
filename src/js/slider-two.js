@@ -111,8 +111,8 @@ const swiper10 = new Swiper('.slider-adult-two', {
   slideClass: 'slide',
   wrapperClass: 'slider-wrap',
   navigation: {
-    nextEl: '.arrow-two-next',
-    prevEl: '.arrow-two-prev',
+    nextEl: '.adult-two__button-prev',
+    prevEl: '.adult-two__button-next',
   },
   breakpoints: {
     320: {
@@ -140,8 +140,8 @@ const swiper13 = new Swiper('.slider', {
   slideClass: 'slide',
   wrapperClass: 'slider-wrap',
   navigation: {
-    nextEl: '.arrow-next',
-    prevEl: '.arrow-prev',
+    nextEl: '.adult-lux__button-prev',
+    prevEl: '.adult-lux__button-next',
   },
   breakpoints: {
     320: {
@@ -187,13 +187,13 @@ const swiper15 = new Swiper('.hotel__swiper', {
       slidesPerView: 2,
       width: 428,
       slidesOffsetBefore: 0,
-       },
-   // when window width is >= 480px
-   1280: {
-    spaceBetween: 40,
-    width: 530,
-    slidesPerView: 2,
-    slidesOffsetBefore: 0,
+    },
+    // when window width is >= 480px
+    1280: {
+      spaceBetween: 40,
+      width: 530,
+      slidesPerView: 2,
+      slidesOffsetBefore: 0,
+    },
   },
-},
 });
