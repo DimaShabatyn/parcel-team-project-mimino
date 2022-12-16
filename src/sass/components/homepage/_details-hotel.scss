@@ -282,6 +282,7 @@
   letter-spacing: 0.02em;
   color: #f3c653;
   transition: background-color 250ms linear;
+  cursor: pointer;
 }
 .hotel-details__modal-open:hover,
 .hotel-details__modal-open:focus {
@@ -301,9 +302,10 @@
   letter-spacing: 0.02em;
   color: #f3c653;
   transition: background-color 250ms linear;
+  cursor: pointer;
 }
-.restaurant-detailes__menu-open:hover,
-.restaurant-detailes__menu-open:focus {
+.hotel-details__menu-open:hover,
+.hotel-details__menu-open:focus {
   background: #ffffff;
 }
 
@@ -407,6 +409,7 @@
   width: 100%;
   height: 100%;
   display: block;
+  cursor: pointer;
 }
 
 @media screen and (min-width: $mobile) {
