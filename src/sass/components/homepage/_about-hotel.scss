@@ -117,8 +117,12 @@
     }
 }
 // swiper-container
+.hotel__box-shadow{
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+
+}
 .hotel__swiper-container {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     position: relative;
     height: auto;
     width: 330px;
@@ -153,6 +157,7 @@
     @media screen and (min-width: $desktop) {
       width: 530px;
     }  
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
   .hotel__slide {   
     height: 245px;
