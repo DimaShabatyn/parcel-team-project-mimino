@@ -20,10 +20,6 @@ const refsPrice = {
   closeBtnPrcD: document.querySelector('[data-modal-price-close-d]'),
 };
 
-console.log(refsPrice.backdropPrcL);
-console.log(refsPrice.modalPrcL);
-console.log(refsPrice.closeBtnPrcL);
-
 refs.body.addEventListener('click', showBackDrop);
 
 function showBackDrop(e) {
@@ -31,7 +27,7 @@ function showBackDrop(e) {
     return;
   }
   if (e.target.nodeName === 'BUTTON') {
-    console.log(e.target.dataset);
+    console.log(e.target);
     console.log('GOOOD');
   }
 
@@ -45,6 +41,7 @@ function showBackDrop(e) {
     refs.modalRoom.classList.remove('is-hidden');
     return;
   }
+
   if (e.target.dataset.modalOpen === 'Room-lux') {
     refsPrice.backdropPrcL.classList.remove('is-hidden');
     refsPrice.modalPrcL.classList.remove('is-hidden');
