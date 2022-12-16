@@ -190,6 +190,10 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  position: relative;
-  left: 100%;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
 }
