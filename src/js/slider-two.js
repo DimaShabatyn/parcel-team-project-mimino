@@ -111,8 +111,8 @@ const swiper10 = new Swiper('.slider-adult-two', {
   slideClass: 'slide',
   wrapperClass: 'slider-wrap',
   navigation: {
-    nextEl: '.arrow-two-next',
-    prevEl: '.arrow-two-prev',
+    nextEl: '.adult-two__button-prev',
+    prevEl: '.adult-two__button-next',
   },
   breakpoints: {
     320: {
