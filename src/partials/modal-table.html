@@ -16,20 +16,20 @@
         <div class="modal-table__input-field modal-flex-element">
           <input
             type="text"
-            name="user-name"
-            id="user-name"
+            name="user-name-table"
+            id="user-name-table"
             class="modal-table__field-input"
             placeholder="Ваше ім’я"
           />
-          <label for="user-name" class="modal-table__field-heading"
+          <label for="user-name-table" class="modal-table__field-heading"
             >На кого забронювати столик?</label
           >
         </div>
         <div class="modal-table__input-field modal-flex-element">
           <input
             type="tel"
-            name="user-tel"
-            id="user-tel"
+            name="user-tel-table"
+            id="user-tel-table"
             placeholder="+38 (___) ___-__-__"
             class="modal-table__field-input"
             pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
@@ -37,8 +37,7 @@
             minlength="13"
             maxlength="13"
           />
-
-          <label for="user-tel" class="modal-table__field-heading"
+          <label for="user-tel-table" class="modal-table__field-heading"
             >Номер телефону</label
           >
         </div>
@@ -60,11 +59,15 @@
           >
         </div>
         <div class="modal-table__select-option date modal-flex-element">
-          <select name="data-in" id="data-in" class="date__selection">
+          <select
+            name="data-in-table"
+            id="data-in-table"
+            class="date__selection"
+          >
             <option value="today">Cьогодні</option>
             <option value="">Оберіть дату</option>
           </select>
-          <label for="data-in" class="date__label"
+          <label for="data-in-table" class="date__label"
             >На яку дату бронювати?</label
           >
         </div>
