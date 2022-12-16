@@ -28,8 +28,6 @@ refs.body.addEventListener('click', showBackDrop);
 
 function showBackDrop(e) {
   if (e.target.nodeName !== 'BUTTON') {
-    console.log(e.target);
-    console.log('ЙУХ');
     return;
   }
   if (e.target.nodeName === 'BUTTON') {
