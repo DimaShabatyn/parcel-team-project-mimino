@@ -177,6 +177,7 @@ const swiper15 = new Swiper('.hotel__swiper', {
     320: {
       spaceBetween: 25,
       slidesPerView: 1.315,
+      slidesOffsetBefore: 85,
       // width: 533,
       width: 330,
     },
@@ -185,12 +186,14 @@ const swiper15 = new Swiper('.hotel__swiper', {
       spaceBetween: 40,
       slidesPerView: 2,
       width: 428,
+      slidesOffsetBefore: 0,
        },
    // when window width is >= 480px
    1280: {
     spaceBetween: 40,
     width: 530,
     slidesPerView: 2,
+    slidesOffsetBefore: 0,
   },
 },
 });
